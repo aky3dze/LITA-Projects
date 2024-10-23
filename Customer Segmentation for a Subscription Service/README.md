@@ -6,6 +6,10 @@
 - [Overview](overview)
 - [Objectives](objectives)
 - [Data Source and Overview](data_source_and_overview)
+- [Tools used](tools_used)
+- [Data Cleaning and Preparation](Data_Cleaning_and_preparation)
+- [Exploratory data analysis](Exploratory_data_analysis)
+- [Data visualization](Data_visualization)
 
 
 ### Overview
