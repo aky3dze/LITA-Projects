@@ -46,36 +46,36 @@ select *
 from sales
 ````
 
---total sales for each product category.
+**total sales for each product category**
 ````sql
 select Item, sum(Sales) as total_sales 
 from sales
 group by Item
 ````
 
---number of sales transactions in each region. 
+**number of sales transactions in each region** 
 ````sql
 select Region, count(OrderDate) as total_transactions 
 from sales
 group by Region
 ````
 
---highest-selling product by total sales value. 
+**highest-selling product by total sales value**
 ````sql
 select  top 1 Item, sum(Sales) as highest_selling 
 from sales
 group by Item
 ````
 
---total revenue per product. 
+**total revenue per product**
 ````sql
 select Item, sum([Quantity]*[UnitPrice]) as total_sales 
 from sales
 group by Item
 ````
 
-````sql
---monthly sales totals for the current year. 
+**monthly sales totals for the current year**
+````sql 
 select year(OrderDate) as sales_year, month(OrderDate) as sales_month, sum(Sales) AS total_sales
 from sales
 group by year(OrderDate), month(OrderDate)
@@ -83,7 +83,7 @@ having year(OrderDate) = '2024'
 order by month(OrderDate)
 ````
 
---top 5 customers by total purchase amount.
+**top 5 customers by total purchase amount**
 ````sql
 select  top 5 Customer_Id, sum([Quantity]*[UnitPrice]) as highest_selling 
 from sales
@@ -91,7 +91,7 @@ group by Customer_Id
 order by highest_selling desc
 ````
 
---percentage of total sales contributed by each region. 
+**percentage of total sales contributed by each region** 
 ````sql
 select Region, sum(Sales*100.0)/(select sum(Sales) from sales) as total_percent
 from sales
@@ -100,7 +100,7 @@ order by total_percent desc
 ````
 
 
---products with no sales in the last quarter. 
+**products with no sales in the last quarter**
 ````sql
 select distinct Item as not_sold
 from sales
