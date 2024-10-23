@@ -1,20 +1,39 @@
 # Customer-Segmentation-for-a-Subscription-Service
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
-- [Description](description)
+  
+- [Introduction](introduction)
 - [Objectives](objectives)
-- [Data Source](data_source)
+- [Data Source and Overview](data_source_and_overview)
 
-### Description
+
+### Introduction
 ---
-For this project, I will analyse customer data for a subscription service to identify segments and trends. I aim to understand customer behaviour, track different subscription types, and identify key trends in cancellations and renewals. The final deliverable will be a Power BI dashboard that presents my analysis.
-
+For this project, I will analyse customer data for a subscription service to identify segments and trends. I aim to understand customer behaviour, track different subscription types, and identify key trends in cancellations and renewals. The final deliverable will be a Power BI dashboard that presents my analysis. 
 
 ### Objectives
 ---
 
-### Data Source
+
+
+### Data Source and Overview
 ---
-LITA
+This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
+
+- _**CustomerID**_ – Unique identifier for customers.
+- _**CustomerName**_ – Name of the customers.
+- **_Region_** – The region where the customer is located.
+- _**SubscriptionType**_ – Type of subscription (e.g., Basic, Premium, Standard).
+- _**SubscriptionStart**_ – Date when the subscription started.
+- _**SubscriptionEnd**_ – Date when the subscription ended.
+- _**Canceled**_ – Whether the subscription was canceled (True/False).
+- **_Revenue_** – Revenue generated from the customer.
+
+
+
+
+
 
 ### Tools used
 ---
@@ -82,7 +101,7 @@ where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 
 **total revenue by subscription type**
 ````sql
-select SubscriptionType, SUM(Revenue) AS TotalRevenue 
+select SubscriptionType, sum(Revenue) as TotalRevenue 
 from sub
 group by SubscriptionType
 ````
@@ -90,7 +109,7 @@ group by SubscriptionType
 
 **top 3 regions by subscription cancellations** 
 ````sql
-select top 3 Region, COUNT(CustomerID) AS CanceledSubscriptions 
+select top 3 Region, count(CustomerID) as CanceledSubscriptions 
 from Sub
 where Canceled = 1
 group by Region 
@@ -98,8 +117,11 @@ order by CanceledSubscriptions desc
 ````
 
 
-**find the total number of active and canceled subscriptions** 
+**total number of active and canceled subscriptions** 
 ````sql
+-- Active subscriptions are those where Canceled = 0 (False).
+-- Canceled subscriptions are those where Canceled = 1 (True).
+
 Select 
     sum(case when Canceled = 0 then 1 else 0 end) as ActiveSubscriptions,
     sum(case when Canceled = 1 then 1 else 0 end) as CanceledSubscriptions
