@@ -1,6 +1,7 @@
 # Sales-Performance-Analysis-for-a-Retail-Store-
 <p align="center">
-<img src="https://github.com/user-attachments/assets/523bfbe8-d373-4167-bec8-731677d288d4" width="800" height="400">
+<img src="https://github.com/user-attachments/assets/5a96f4ac-66f4-4013-9162-25b68efb0daf" width="800" height="400">
+
 
 
 - [Description](description)
