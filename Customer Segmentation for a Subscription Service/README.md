@@ -3,18 +3,25 @@
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
   
-- [Introduction](introduction)
+- [Overview](overview)
 - [Objectives](objectives)
 - [Data Source and Overview](data_source_and_overview)
 
 
-### Introduction
+### Overview
 ---
-For this project, I will analyse customer data for a subscription service to identify segments and trends. I aim to understand customer behaviour, track different subscription types, and identify key trends in cancellations and renewals. The final deliverable will be a Power BI dashboard that presents my analysis. 
+For this project, I will analyse customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
+
 
 ### Objectives
 ---
-
+The analysis aims to:
+- Understand customer behaviour
+- Track different subscription types
+- Identify key trends in cancellations and renewals
+- Calculate key business metrics such as customer retention, churn, and revenue
+- Provide actionable insights that could help optimise customer engagement strategies
+- The final deliverable will be a Power BI dashboard that presents my analysis. 
 
 
 ### Data Source and Overview
@@ -29,10 +36,6 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 - _**SubscriptionEnd**_ – Date when the subscription ended.
 - _**Canceled**_ – Whether the subscription was canceled (True/False).
 - **_Revenue_** – Revenue generated from the customer.
-
-
-
-
 
 
 ### Tools used
