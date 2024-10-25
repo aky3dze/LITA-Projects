@@ -3,13 +3,13 @@
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
 ## Table of Contents 
-- [Overview](overview)
-- [Objectives](objectives)
-- [Data Source and Overview](data_source_and_overview)
-- [Tools used](tools_used)
-- [Data Cleaning and Preparation](Data_Cleaning_and_preparation)
-- [Exploratory data analysis](Exploratory_data_analysis)
-- [Data visualization](Data_visualization)
+- [Overview](#overview)
+- [Objectives](#objectives)
+- [Data Source and Overview](#data_source_and_overview)
+- [Tools](#tools)
+- [Data Cleaning and Preparation](#data_cleaning_and_preparation)
+- [Exploratory data analysis](#exploratory_data_analysis)
+- [Data visualization](#data_visualization)
 
 
 ### Overview
