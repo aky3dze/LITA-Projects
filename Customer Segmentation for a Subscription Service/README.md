@@ -7,9 +7,9 @@
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
 - [Tools](#tools)
-- [Data Cleaning and Preparation](#data_cleaning_and_preparation)
-- [Exploratory data analysis](#exploratory_data_analysis)
-- [Data visualization](#data_visualization)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory data analysis](#exploratory-data-analysis)
+- [Data visualization](#data-visualization)
 
 
 ### Overview
