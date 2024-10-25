@@ -2,14 +2,17 @@
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
-## Table of Contents 
-- [Overview](#overview)
+### Table of Contents 
+- [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
 - [Tools](#tools)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-- [Exploratory data analysis](#exploratory-data-analysis)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data visualization](#data-visualization)
+- [Findings](#findings)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
 
 
 ### Overview
@@ -42,7 +45,7 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 - ***Revenue*** – Revenue generated from the customer.
 
 
-### Tools used
+### Tools
 ---
 - Microsoft Excel [Download Here](https://www.microsoft.com/es-es/)
   1. for data cleaning
@@ -58,7 +61,7 @@ data loading and inspection
 handling missing variables
 data cleaning and formating
 
-### Exploratory data analysis
+### Exploratory Data Analysis
 ---
 ````sql
 ---retrieves all subscription data
