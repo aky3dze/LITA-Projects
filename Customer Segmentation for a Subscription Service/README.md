@@ -3,6 +3,7 @@
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
 ### Table of Contents 
+---
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
@@ -11,7 +12,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data visualization](#data-visualization)
 - [Findings](#findings)
-- [Recommendations](#recommendations)
+- [Conclusions and Recommendations](#conclusions-and-recommendations)
 - [Limitations](#limitations)
 
 
@@ -194,7 +195,7 @@ from sub
 ### Findings
 ---
 
-### Recommendations 
+### Conclusions and Recommendations 
 ---
 
 
