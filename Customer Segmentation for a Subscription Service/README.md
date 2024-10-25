@@ -5,7 +5,7 @@
 ## Table of Contents 
 - [Overview](#overview)
 - [Objectives](#objectives)
-- [Data Source and Overview](#data_source_and_overview)
+- [Data Source and Overview](#data-source-and-overview)
 - [Tools](#tools)
 - [Data Cleaning and Preparation](#data_cleaning_and_preparation)
 - [Exploratory data analysis](#exploratory_data_analysis)
