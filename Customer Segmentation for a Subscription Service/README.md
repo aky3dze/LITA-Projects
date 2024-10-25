@@ -15,7 +15,7 @@
 - [Limitations](#limitations)
 
 
-### Overview
+### Project Overview
 ---
 For this project, I will analyse customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
 
