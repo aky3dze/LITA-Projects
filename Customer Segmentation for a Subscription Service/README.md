@@ -32,14 +32,14 @@ The analysis aims to:
 ---
 This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
 
-- _**CustomerID**_ – Unique identifier for customers.
-- _**CustomerName**_ – Name of the customers.
-- **_Region_** – The region where the customer is located.
-- _**SubscriptionType**_ – Type of subscription (e.g., Basic, Premium, Standard).
-- _**SubscriptionStart**_ – Date when the subscription started.
-- _**SubscriptionEnd**_ – Date when the subscription ended.
-- _**Canceled**_ – Whether the subscription was canceled (True/False).
-- **_Revenue_** – Revenue generated from the customer.
+- ***CustomerID*** – Unique identifier for customers.
+- ***CustomerName*** – Name of the customers.
+- ***Region*** – The region where the customer is located.
+- ***SubscriptionType*** – Type of subscription (e.g., Basic, Premium, Standard).
+- ***SubscriptionStart*** – Date when the subscription started.
+- ***SubscriptionEnd*** – Date when the subscription ended.
+- ***Canceled*** – Whether the subscription was canceled (True/False).
+- ***Revenue*** – Revenue generated from the customer.
 
 
 ### Tools used
@@ -66,29 +66,48 @@ select *
 from sub
 ````
 
-**total number of customers from each region**
+**1. total number of customers from each region**
 ````sql
-select Region, count(CustomerID) as TotalCustomers
+select Region, count(distinct CustomerID) as TotalCustomers
 from sub
 group by Region
 ````
+**Results** 
+| Region | TotalCustomers |
+| --- | --- |
+| East	| 5 | 
+| South | 5 |
+| North	| 5 |
+| West	| 5 |
 
-**most popular subscription type by the number of customers**
+The customer distribution is equal across the different regions. 
+
+
+**2. most popular subscription type by the number of customers**
 ````sql
-select top 1 SubscriptionType, COUNT(CustomerID) AS CustomerCount
+select top 1 SubscriptionType, count(distinct CustomerID) as CustomerCount
 from sub
 group by SubscriptionType
 ````
+**Results** 
+| SubscriptionType | CustomerCount |
+| --- | --- |
+| Basic	| 10 |
 
-**customers who cancelled their subscription within 6 months**
+The basic subscription is the most popular among customers with 10 subscribers, indicating a higher preference for basic subscription services.
+	
+
+**3. customers who cancelled their subscription within 6 months**
 ````sql 
-select CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
+select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
 where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 ````
+**Results** 
+*No customer cancelled their subscription within 6 months.*
 
 
-**calculate the average subscription duration for all customers**
+**4. calculate the average subscription duration for all customers**
 ````sql
 --in days
 select Avg(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) as AvgSubscriptionDurationDays
@@ -98,23 +117,43 @@ from sub
 select Avg(DATEDIFF(month, SubscriptionStart, SubscriptionEnd)) as AvgSubscriptionDurationMonths
 from sub
 ````
+**Results** 
+| AvgSubscriptionDurationDays |
+| --- |
+| 365	|
 
-**customers with subscriptions longer than 12 months**
+| AvgSubscriptionDurationMonths |
+| --- |
+| 12	|
+
+The average subscription duration is approximately 365 days (12 months), which indicates a healthy duration as most customers stayed as subscribers for at least one year.
+
+**5. customers with subscriptions longer than 12 months**
 ````sql 
-select CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
+select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
 where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 ````
+**Results** 
+*No customer had their subscription longer than 12 months.*
 
-**total revenue by subscription type**
+
+**6. total revenue by subscription type**
 ````sql
 select SubscriptionType, sum(Revenue) as TotalRevenue 
 from sub
 group by SubscriptionType
 ````
+**Results** 
+| SubscriptionType | TotalRevenue  |
+| --- | --- |
+| Basic	| 33776735 |
+| Premium	| 16899064 |
+| Standard	| 16864376 |
+	
+Basic subscription which is the most popular amongst customers also generated the most revenue. 
 
-
-**top 3 regions by subscription cancellations** 
+**7. top 3 regions by subscription cancellations** 
 ````sql
 select top 3 Region, count(CustomerID) as CanceledSubscriptions 
 from Sub
@@ -122,9 +161,16 @@ where Canceled = 1
 group by Region 
 order by CanceledSubscriptions desc
 ````
+**Results** 
+| Region | CanceledSubscriptions |
+| --- | --- |
+| North	| 5067 |
+| South | 5064 |
+| West	| 5044 |
 
+The North has the highest number of cancelled subscriptions, followed by the South region. 
 
-**total number of active and canceled subscriptions** 
+**8. total number of active and canceled subscriptions** 
 ````sql
 -- Active subscriptions are those where Canceled = 0 (False).
 -- Canceled subscriptions are those where Canceled = 1 (True).
@@ -134,6 +180,11 @@ Select
     sum(case when Canceled = 1 then 1 else 0 end) as CanceledSubscriptions
 from sub
 ````
+**Results** 
+| ActiveSubscriptions | CanceledSubscriptions |
+| --- | --- |
+| 18612	| 15175 |
+
 
 ### Data visualization
 ---
