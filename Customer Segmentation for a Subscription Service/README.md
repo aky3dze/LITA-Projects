@@ -2,7 +2,7 @@
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
-  
+## Table of Contents 
 - [Overview](overview)
 - [Objectives](objectives)
 - [Data Source and Overview](data_source_and_overview)
@@ -185,8 +185,20 @@ from sub
 | --- | --- |
 | 18612	| 15175 |
 
-
 ### Data visualization
 ---
+
+### Findings
+---
+
+### Recommendations 
+---
+
+
+### Limitations
+---
+
+
+
 
 
