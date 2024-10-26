@@ -2,8 +2,10 @@
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
-### Table of Contents 
----
+
+	
+## Table of Contents 
+
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
@@ -16,13 +18,11 @@
 - [Limitations](#limitations)
 
 
-### Project Overview
----
+## Project Overview
 For this project, I will analyse customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
 
 
-### Objectives
----
+## Objectives
 The analysis aims to:
 - Understand customer behaviour
 - Track different subscription types
@@ -32,8 +32,7 @@ The analysis aims to:
 - The final deliverable will be a Power BI dashboard that presents my analysis. 
 
 
-### Data Source and Overview
----
+## Data Source and Overview
 This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
 
 - `CustomerID` – Unique identifier for each customer.
@@ -46,15 +45,14 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 - `Revenue` – Revenue generated from the customer.
 
 
-### Tools and concepts applied
----
+## Tools and concepts applied
 the following tools and concepts were used for data processing, analysis and visualization: 
 - Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - for data cleaning and initial analysis
      
 - SQL server - for querying and extracting key insights
   	- The following SQL 
-  	  1. Aggregate functions
-  	  2. Case expression
+  	 1. Aggregate functions
+  	 2. Case expression
   	     
 - PowerBi - for data visualization and dashboard creation
 	- The following PowerBi features were incorporated:
@@ -64,14 +62,12 @@ the following tools and concepts were used for data processing, analysis and vis
    	    
 - Github - to showcase this project as part of a portfolio 
 
-### Data Cleaning and Preparation
----
+## Data Cleaning and Preparation
 data loading and inspection: the raw data was loaded first in excel 
 data cleaning and formatting
 
 
-### Exploratory Data Analysis
----
+## Exploratory Data Analysis
 ````sql
 ---retrieves all subscription data
 select *
@@ -197,18 +193,18 @@ from sub
 | --- | --- |
 | 18612	| 15175 |
 
-### Data visualization
----
-
-### Findings
----
-
-### Conclusions and Recommendations 
----
+## Data visualization
 
 
-### Limitations
----
+## Findings
+
+
+## Conclusions and Recommendations 
+
+
+
+## Limitations
+
 
 
 
