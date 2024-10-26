@@ -36,31 +36,39 @@ The analysis aims to:
 ---
 This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
 
-- ***CustomerID*** – Unique identifier for customers.
-- ***CustomerName*** – Name of the customers.
-- ***Region*** – The region where the customer is located.
-- ***SubscriptionType*** – Type of subscription (e.g., Basic, Premium, Standard).
-- ***SubscriptionStart*** – Date when the subscription started.
-- ***SubscriptionEnd*** – Date when the subscription ended.
-- ***Canceled*** – Whether the subscription was canceled (True/False).
-- ***Revenue*** – Revenue generated from the customer.
+- `CustomerID` – Unique identifier for each customer.
+- `CustomerName` – Name of the customer.
+- `Region` – The region where the customer is located.
+- `SubscriptionType` – Type of subscription (e.g., Basic, Premium, Standard).
+- `SubscriptionStart` – Date when the subscription started.
+- `SubscriptionEnd` – Date when the subscription ended.
+- `Canceled` – Whether the subscription was canceled (True/False).
+- `Revenue` – Revenue generated from the customer.
 
 
-### Tools
+### Tools and concepts applied
 ---
-- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/)
-  1. for data cleaning
-  2. for analysis
+the following tools and concepts were used for data processing, analysis and visualization: 
+- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - for data cleaning and initial analysis
      
-- SQL for extracting key insights
-- PowerBi for visualization
-- Github for portfolio building
+- SQL server - for querying and extracting key insights
+  	- The following SQL 
+  	  1. Aggregate functions
+  	  2. Case expression
+  	     
+- PowerBi - for data visualization and dashboard creation
+	- The following PowerBi features were incorporated:
+   	 1. Measures
+   	 2. Calculated columns
+   	 3. DAX
+   	    
+- Github - to showcase this project as part of a portfolio 
 
 ### Data Cleaning and Preparation
 ---
-data loading and inspection
-handling missing variables
-data cleaning and formating
+data loading and inspection: the raw data was loaded first in excel 
+data cleaning and formatting
+
 
 ### Exploratory Data Analysis
 ---
