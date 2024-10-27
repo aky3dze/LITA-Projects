@@ -4,24 +4,29 @@
 
 
 
-- [Description](description)
-- [Objectives](objectives)
-- [Data Source](data_source)
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Data Source and Overview](#data-source-and-overview)
+- [Tools](#tools)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data visualization](#data-visualization)
+- [Findings](#findings)
+- [Conclusions and Recommendations](#conclusions-and-recommendations)
+- [Limitations](#limitations)
 
-### Description
----
+## Project Overview 
 For this project, I will analyse the sales performance of a retail store. I will explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. I aim to produce an interactive Power BI dashboard that highlights these findings.
 
 
-### Objectives
----
+## Objectives
 
-### Data Source
----
+
+## Data Source and Overview
+
 LITA
 
-### Tools used
----
+## Tools and concepts applied
 - Microsoft Excel [Download Here](https://www.microsoft.com/es-es/)
   1. for data cleaning
   2. for analysis
@@ -30,8 +35,7 @@ LITA
 - PowerBi for visualization
 - Github for portfolio building
 
-### Data Cleaning and Preparation
----
+## Data Cleaning and Preparation
 data loading and inspection
 handling missing variables
 data cleaning and formating
@@ -112,8 +116,12 @@ group by Item
 )
 ````
 
+## Data visualization
 
-### Data visualization
----
 
+## Findings]
+
+## Conclusions and Recommendations
+
+## Limitations
 
