@@ -80,7 +80,7 @@ select Region, count(distinct CustomerID) as TotalCustomers
 from sub
 group by Region
 ````
-**Results** 
+**Output** 
 | Region | TotalCustomers |
 | --- | --- |
 | East	| 5 | 
@@ -97,7 +97,7 @@ select top 1 SubscriptionType, count(distinct CustomerID) as CustomerCount
 from sub
 group by SubscriptionType
 ````
-**Results** 
+**Output** 
 | SubscriptionType | CustomerCount |
 | --- | --- |
 | Basic	| 10 |
@@ -111,7 +111,7 @@ select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd
 from sub
 where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 ````
-**Results** 
+**Output** 
 *No customer cancelled their subscription within 6 months.*
 
 
@@ -125,7 +125,7 @@ from sub
 select Avg(DATEDIFF(month, SubscriptionStart, SubscriptionEnd)) as AvgSubscriptionDurationMonths
 from sub
 ````
-**Results** 
+**Output** 
 | AvgSubscriptionDurationDays |
 | --- |
 | 365	|
@@ -142,7 +142,7 @@ select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd
 from sub
 where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 ````
-**Results** 
+**Output** 
 *No customer had their subscription longer than 12 months.*
 
 
@@ -152,7 +152,7 @@ select SubscriptionType, sum(Revenue) as TotalRevenue
 from sub
 group by SubscriptionType
 ````
-**Results** 
+**Output** 
 | SubscriptionType | TotalRevenue  |
 | --- | --- |
 | Basic	| 33776735 |
@@ -169,7 +169,7 @@ where Canceled = 1
 group by Region 
 order by CanceledSubscriptions desc
 ````
-**Results** 
+**Output** 
 | Region | CanceledSubscriptions |
 | --- | --- |
 | North	| 5067 |
@@ -188,12 +188,145 @@ Select
     sum(case when Canceled = 1 then 1 else 0 end) as CanceledSubscriptions
 from sub
 ````
-**Results** 
+**Output** 
 | ActiveSubscriptions | CanceledSubscriptions |
 | --- | --- |
 | 18612	| 15175 |
 
+--churn rate in each region
+````sql
+Select Region, 
+       count(CustomerID) as TotalCustomers, 
+       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledCustomers,
+       (sum(case when Canceled = 1 then 1 else 0 end) * 100.0 / count(CustomerID)) as ChurnRate
+from sub
+group by Region
+````
+**Output** 
+| ActiveSubscriptions | CanceledSubscriptions |
+| --- | --- |
+| 18612	| 15175 |
+Region	TotalCustomers	CanceledCustomers	ChurnRate
+North	8433	5067	60.085378868729
+East	8488	0	0.000000000000
+South	8446	5064	59.957376272791
+West	8420	5044	59.904988123515
+
+
+--churn rate by subscription
+````sql
+Select SubscriptionType, 
+       count(CustomerID) as TotalCustomers, 
+       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledCustomers,
+       (sum(case when Canceled = 1 then 1 else 0 end) * 100.0 / count(CustomerID)) as ChurnRate
+from sub
+group by SubscriptionType
+````
+**Output** 
+| ActiveSubscriptions | CanceledSubscriptions |
+| --- | --- |
+| 18612	| 15175 |
+SubscriptionType	TotalCustomers	CanceledCustomers	ChurnRate
+Basic	16921	5067	29.945038709296
+Premium	8446	5064	59.957376272791
+Standard	8420	5044	59.904988123515
+
+--Revenue generated from each customer
+````
+select distinct CustomerID, sum(Revenue) as TotalRevenuePerCustomer
+from sub
+group by CustomerID
+order by TotalRevenuePerCustomer desc
+````
+**Output** 
+| CustomerID | TotalRevenuePerCustomer |
+| --- | --- |
+| 18612	| 15175 |
+211	3437444
+207	3427436
+218	3414995
+220	3399895
+212	3398288
+202	3395374
+216	3385349
+210	3384539
+201	3378897
+203	3377675
+217	3376796
+209	3365221
+215	3361350
+214	3357269
+219	3354858
+208	3354682
+213	3351225
+206	3346887
+205	3345833
+204	3326162
+
+--customer by number of subscription
+````sql
+select distinct CustomerName, count(CustomerID) as NumberofSubscriptions
+from sub
+group by CustomerName
+order by NumberofSubscriptions desc
+````
+**Output** 
+| CustomerName | NumberofSubscriptions |
+| --- | --- |
+| Liam	| 1718 |
+| Mike	| 1714 |
+| Anna	| 1700 |
+| Sophia| 1699 |
+| Nina	| 1695 |
+| Jane	| 1693 |
+| John	| 1693 |
+| Eva	| 1692 |
+| Chris	| 1692 |
+| Rob	| 1690 |
+| Alex	| 1690 |
+| Grace	| 1687 |
+| Paul	| 1686 |
+| Tom	| 1685 |
+| Zoe	| 1683 |
+| Dan	| 1680 |
+| Ella	| 1679 |
+| Sara	| 1676 |
+| James	| 1673 |
+| Maria	| 1662 |
+
+211	1718
+207	1714
+212	1700
+218	1699
+220	1695
+202	1693
+201	1693
+213	1692
+210	1692
+217	1690
+203	1690
+216	1687
+215	1686
+209	1685
+214	1683
+219	1680
+206	1679
+208	1676
+205	1673
+204	1662
+
+--avg number of subscription
+````sql
+select count(CustomerID)/count(distinct CustomerID) as AvgNumberofSubscriptions
+from sub
+````
+**Output** 
+| AvgNumberofSubscriptions | 
+| --- | 
+| 1689	|
+
 ## Data visualization
+![Screenshot 2024-10-28 004111](https://github.com/user-attachments/assets/91f9ad7c-e8e4-4195-ad07-26e290130c56)
 
 
 ## Findings
