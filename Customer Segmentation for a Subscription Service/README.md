@@ -9,7 +9,7 @@
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
-- [Tools](#tools)
+- [Tools and concepts applied](#tools-and-concepts-applied)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data visualization](#data-visualization)
