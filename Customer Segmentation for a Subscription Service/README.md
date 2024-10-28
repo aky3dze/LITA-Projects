@@ -90,8 +90,6 @@ group by Region
 | North	| 5 |
 | West	| 5 |
 
-_Insight:_ The customer distribution is equal across the different regions, suggesting a balanced market reach.
-
 
 **2. Most popular subscription type by the number of customers**
 ````sql
@@ -103,8 +101,6 @@ group by SubscriptionType
 | SubscriptionType | CustomerCount |
 | --- | --- |
 | Basic	| 10 |
-
-_Insight:_ Basic subscription is the most popular among customers, indicating a higher preference for basic subscription services.
 	
 
 **3. Customers who cancelled their subscription within 6 months**
@@ -116,10 +112,8 @@ where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 **Output** 
 No customer cancelled their subscription within 6 months.
 
-_Insight:_
 
-
-**Calculate the average subscription duration for all customers**
+**4. Calculate the average subscription duration for all customers**
 ````sql
 --in days
 select Avg(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) as AvgSubscriptionDurationDays
@@ -138,19 +132,18 @@ from sub
 | --- |
 | 12	|
 
-_Insight:_ The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year.
 
-**Customers with subscriptions longer than 12 months**
+**5. Customers with subscriptions longer than 12 months**
 ````sql 
 select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
 where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 ````
 **Output** 
-_Insight:_ No customer had their subscription longer than 12 months.
+No customer had their subscription longer than 12 months.
 
 
-**Total revenue by subscription type**
+**6. Total revenue by subscription type**
 ````sql
 select SubscriptionType, sum(Revenue) as TotalRevenue 
 from sub
@@ -163,9 +156,8 @@ group by SubscriptionType
 | Premium	| 16899064 |
 | Standard	| 16864376 |
 	
-_Insight:_ Basic subscription which is the most popular amongst customers also generated the most revenue. 
 
-**Top 3 regions by subscription cancellations** 
+**7. Top 3 regions by subscription cancellations** 
 ````sql
 select top 3 Region, count(CustomerID) as CanceledSubscriptions 
 from Sub
@@ -180,9 +172,8 @@ order by CanceledSubscriptions desc
 | South | 5064 |
 | West	| 5044 |
 
-_Insight:_ The North has the highest number of cancelled subscriptions, followed by the South region. 
 
-**Total number of active and canceled subscriptions** 
+**8. Total number of active and canceled subscriptions** 
 ````sql
 -- Active subscriptions are those where Canceled = 0 (False).
 -- Canceled subscriptions are those where Canceled = 1 (True).
@@ -197,9 +188,8 @@ from sub
 | --- | --- |
 | 18612	| 15175 |
 
-_Insight:_ Active subscriptions are higher than the cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
 
-**Churn rate in each region**
+**9. Churn rate in each region**
 ````sql
 Select Region, 
        count(CustomerID) as TotalCustomers, 
@@ -216,10 +206,8 @@ group by Region
 | South | 8446 | 5064 | 59.957376272791|
 | West | 8420 | 5044 | 59.904988123515 |	
 
-_Insights:_ High churn rate in the North, South and West regions may indicate a need for targeted retention strategies and efforts
 
-
-**Churn rate by subscription**
+**10. Churn rate by subscription**
 ````sql
 Select SubscriptionType, 
        count(CustomerID) as TotalCustomers, 
@@ -235,9 +223,8 @@ group by SubscriptionType
 | Premium | 8446 | 5064 | 59.957376272791 |
 | Standard | 8420 | 5044 | 59.904988123515 |	
 
-_Insight:_ Premium and Standard subscription plans experienced a higher churn rate, implying that customer expectations were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received.
 
-**Revenue generated from each customer**
+**11. Revenue generated from each customer**
 ````
 select distinct CustomerID, sum(Revenue) as TotalRevenuePerCustomer
 from sub
@@ -268,9 +255,8 @@ order by TotalRevenuePerCustomer desc
 | 205	| 3345833 |
 | 204	| 3326162 |
 
-_Insight:_ 
 
---customer by number of subscription
+**12. Customer by number of subscriptions**
 ````sql
 select distinct CustomerID, count(CustomerID) as NumberofSubscriptions
 from sub
@@ -301,9 +287,8 @@ order by NumberofSubscriptions desc
 | 205	| 1673 |
 | 204	| 1662 |
 
-_Insight:_ 
 
-**Average number of subscriptions per customer**
+**13. Average number of subscriptions per customer**
 ````sql
 select count(CustomerID)/count(distinct CustomerID) as AvgNumberofSubscriptions
 from sub
@@ -313,20 +298,71 @@ from sub
 | --- | 
 | 1689	|
 
-_Insight:_ The average number of subscriptions per customer 
 
 ## Data visualization
 ![Screenshot 2024-10-28 004111](https://github.com/user-attachments/assets/91f9ad7c-e8e4-4195-ad07-26e290130c56)
 
 
 ## Findings
+**1. Total number of customers from each region**
+The customer distribution is equal across the different regions, suggesting a balanced market reach.
+
+
+**2. Most popular subscription type by the number of customers**
+Basic subscription is the most popular among customers, indicating a higher preference for basic subscription services.
+	
+
+**3. Customers who cancelled their subscription within 6 months**
+No customer cancelled their subscription within 6 months.
+No subscription cancellation within 6 months may suggest that customers had a satisfactory onboarding experience, hence the good initial retention.
+
+
+**4. Calculate the average subscription duration for all customers**
+The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year.
+
+**5. Customers with subscriptions longer than 12 months**
+No customer had their subscription longer than 12 months.
+
+The lack of customer subscriptions beyond 12 months, may suggest the need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
+
+
+**6. Total revenue by subscription type**
+Basic subscription which is the most popular amongst customers also generated the most revenue. 
+
+**7. Top 3 regions by subscription cancellations** 
+The North has the highest number of cancelled subscriptions, followed by the South region. 
+
+**8. Total number of active and canceled subscriptions**
+Active subscriptions are higher than the cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
+
+**9. Churn rate in each region**
+High churn rate in the North, South and West regions may indicate a need for targeted retention strategies and efforts.
+
+
+**10. Churn rate by subscription**
+Premium and Standard subscription plans experienced a higher churn rate, implying that customer expectations were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received.
+
+**11. Revenue generated from each customer**
+Customers contributing significantly to the overall revenue could be introduced to a loyalty program or exclusive offers to retain them.
+
+**12. Customer by number of subscriptions**
+
+
+
+**13. Average number of subscriptions per customer**
+The average number of subscriptions per customer gives a general overview of customer engagement.
 
 
 ## Conclusions and Recommendations 
+- Implement targeted customer retention strategies in regions North, South, and West
+- Incentives or strategies to encourage customers on basic subscriptions to go for higher-tier plans
+- Implement long-term plans
+- Introduce loyalty programs
 
 
 
 ## Limitations
+- The dataset is limited to one table with a single subscription period, and no demographic data. Thus, customer behaviour across different seasons may not be fully captured in the analysis. Additionally, the effects of demographic patterns could enhance our understanding of churn and retention rates.
 
 
 
