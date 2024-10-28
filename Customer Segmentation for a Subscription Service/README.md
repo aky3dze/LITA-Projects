@@ -1,4 +1,4 @@
-# Customer-Segmentation-for-a-Subscription-Service
+# Customer Segmentation for a Subscription Service
 <p align="center">
 <img src="https://github.com/user-attachments/assets/e8e96962-dabb-4771-ac6d-124b05ed68ed" width="600" height="400">
 
@@ -39,9 +39,9 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 - `CustomerName` – Name of the customer.
 - `Region` – The region where the customer is located.
 - `SubscriptionType` – Type of subscription (e.g., Basic, Premium, Standard).
-- `SubscriptionStart` – Date when the subscription started.
+- `SubscriptionStart` – Date when the subscription started. m 
 - `SubscriptionEnd` – Date when the subscription ended.
-- `Canceled` – Whether the subscription was canceled (True/False).
+- `Canceled` – Whether the subscription was cancelled (True/False).
 - `Revenue` – Revenue generated from the customer.
 
 
