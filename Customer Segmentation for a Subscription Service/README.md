@@ -63,8 +63,10 @@ the following tools and concepts were used for data processing, analysis and vis
 - Github - to showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
-data loading and inspection: the raw data was loaded first in excel 
-data cleaning and formatting
+- data loading and inspection: the raw data was loaded first in Excel, and checked for missing values, duplicates and consistency in data format 
+data cleaning and formatting to remove duplicates 
+subscription duration calculated in Excel using `= SubscriptionEnd - SubscriptionStart`
+- loading into SQL server and PowerBi; data types reviewed accordingly
 
 
 ## Exploratory Data Analysis
@@ -88,7 +90,7 @@ group by Region
 | North	| 5 |
 | West	| 5 |
 
-The customer distribution is equal across the different regions. 
+_Insight:_ The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
 **Most popular subscription type by the number of customers**
@@ -102,7 +104,7 @@ group by SubscriptionType
 | --- | --- |
 | Basic	| 10 |
 
-The basic subscription is the most popular among customers with 10 subscribers, indicating a higher preference for basic subscription services.
+_Insight:_ Basic subscription is the most popular among customers, indicating a higher preference for basic subscription services.
 	
 
 **Customers who cancelled their subscription within 6 months**
@@ -112,7 +114,7 @@ from sub
 where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 ````
 **Output** 
-*No customer cancelled their subscription within 6 months.*
+_Insight:_ No customer cancelled their subscription within 6 months.
 
 
 **Calculate the average subscription duration for all customers**
@@ -134,7 +136,7 @@ from sub
 | --- |
 | 12	|
 
-The average subscription duration is approximately 365 days (12 months), which indicates a healthy duration as most customers stayed as subscribers for at least one year.
+_Insight:_ The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year.
 
 **Customers with subscriptions longer than 12 months**
 ````sql 
@@ -143,7 +145,7 @@ from sub
 where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 ````
 **Output** 
-*No customer had their subscription longer than 12 months.*
+_Insight:_ No customer had their subscription longer than 12 months.
 
 
 **Total revenue by subscription type**
@@ -159,7 +161,7 @@ group by SubscriptionType
 | Premium	| 16899064 |
 | Standard	| 16864376 |
 	
-Basic subscription which is the most popular amongst customers also generated the most revenue. 
+_Insight:_ Basic subscription which is the most popular amongst customers also generated the most revenue. 
 
 **Top 3 regions by subscription cancellations** 
 ````sql
@@ -176,7 +178,7 @@ order by CanceledSubscriptions desc
 | South | 5064 |
 | West	| 5044 |
 
-The North has the highest number of cancelled subscriptions, followed by the South region. 
+_Insight:_ The North has the highest number of cancelled subscriptions, followed by the South region. 
 
 **Total number of active and canceled subscriptions** 
 ````sql
@@ -193,6 +195,8 @@ from sub
 | --- | --- |
 | 18612	| 15175 |
 
+_Insight:_ Active subscriptions are higher than the cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
+
 **Churn rate in each region**
 ````sql
 Select Region, 
@@ -208,7 +212,9 @@ group by Region
 | North	| 8433 | 5067 | 60.085378868729 |
 | East | 8488 | 0 | 0.000000000000 |
 | South | 8446 | 5064 | 59.957376272791|
-| West | 8420 | 5044 | 59.904988123515 |			
+| West | 8420 | 5044 | 59.904988123515 |	
+
+_Insights:_ High churn rate in the North, South and West regions may indicate a need for targeted retention strategies and efforts
 
 
 **Churn rate by subscription**
@@ -226,7 +232,8 @@ group by SubscriptionType
 | Basic	| 16921 | 5067 | 29.945038709296 |
 | Premium | 8446 | 5064 | 59.957376272791 |
 | Standard | 8420 | 5044 | 59.904988123515 |	
-			
+
+_Insight:_ Premium and Standard subscription plans experienced a higher churn rate, implying that customer expectations were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received.
 
 **Revenue generated from each customer**
 ````
@@ -259,6 +266,8 @@ order by TotalRevenuePerCustomer desc
 | 205	| 3345833 |
 | 204	| 3326162 |
 
+_Insight:_ 
+
 --customer by number of subscription
 ````sql
 select distinct CustomerID, count(CustomerID) as NumberofSubscriptions
@@ -290,7 +299,7 @@ order by NumberofSubscriptions desc
 | 205	| 1673 |
 | 204	| 1662 |
 
-
+_Insight:_ 
 
 **Average number of subscriptions per customer**
 ````sql
@@ -301,6 +310,8 @@ from sub
 | AvgNumberofSubscriptions | 
 | --- | 
 | 1689	|
+
+_Insight:_ The average number of subscriptions per customer 
 
 ## Data visualization
 ![Screenshot 2024-10-28 004111](https://github.com/user-attachments/assets/91f9ad7c-e8e4-4195-ad07-26e290130c56)
