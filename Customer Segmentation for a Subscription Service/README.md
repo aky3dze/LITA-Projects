@@ -19,7 +19,7 @@
 
 
 ## Project Overview
-For this project, I will analyse customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
+This project analyses customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
 
 
 ## Objectives
@@ -301,10 +301,19 @@ from sub
 
 
 ## Data visualization
-![Screenshot 2024-10-29 000243](https://github.com/user-attachments/assets/4277160a-1231-406f-bc06-f2baf8e25ac5)
-![Screenshot 2024-10-29 000449](https://github.com/user-attachments/assets/a464c939-127b-4355-9f61-74c4b08c6941)
-![Screenshot 2024-10-29 000514](https://github.com/user-attachments/assets/c1d2e8a3-7f4e-4d4a-8d28-9f7f0b0ad1b1)
+The PowerBi dashboard provides an interactive interface, allowing for filtering (Figure 1) based on whether or not a subscription was cancelled (Figures 2 and 3) and viewing trends by customer segments, thus region and subscription type.
 
+![Screenshot 2024-10-29 000243](https://github.com/user-attachments/assets/4277160a-1231-406f-bc06-f2baf8e25ac5)
+**Figure 1**
+<br>
+
+![Screenshot 2024-10-29 000449](https://github.com/user-attachments/assets/a464c939-127b-4355-9f61-74c4b08c6941)
+**Figure 2**
+<br>
+
+![Screenshot 2024-10-29 000514](https://github.com/user-attachments/assets/c1d2e8a3-7f4e-4d4a-8d28-9f7f0b0ad1b1)
+**Figure 3**
+<br>
 
 
 ## Findings
