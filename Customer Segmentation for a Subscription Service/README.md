@@ -74,7 +74,7 @@ select *
 from sub
 ````
 
-**1. total number of customers from each region**
+**Total number of customers from each region**
 ````sql
 select Region, count(distinct CustomerID) as TotalCustomers
 from sub
@@ -91,7 +91,7 @@ group by Region
 The customer distribution is equal across the different regions. 
 
 
-**2. most popular subscription type by the number of customers**
+**Most popular subscription type by the number of customers**
 ````sql
 select top 1 SubscriptionType, count(distinct CustomerID) as CustomerCount
 from sub
@@ -105,7 +105,7 @@ group by SubscriptionType
 The basic subscription is the most popular among customers with 10 subscribers, indicating a higher preference for basic subscription services.
 	
 
-**3. customers who cancelled their subscription within 6 months**
+**Customers who cancelled their subscription within 6 months**
 ````sql 
 select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
@@ -115,7 +115,7 @@ where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 *No customer cancelled their subscription within 6 months.*
 
 
-**4. calculate the average subscription duration for all customers**
+**Calculate the average subscription duration for all customers**
 ````sql
 --in days
 select Avg(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) as AvgSubscriptionDurationDays
@@ -136,7 +136,7 @@ from sub
 
 The average subscription duration is approximately 365 days (12 months), which indicates a healthy duration as most customers stayed as subscribers for at least one year.
 
-**5. customers with subscriptions longer than 12 months**
+**Customers with subscriptions longer than 12 months**
 ````sql 
 select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
@@ -146,7 +146,7 @@ where DATEDIFF(month, SubscriptionStart, SubscriptionEnd) >12
 *No customer had their subscription longer than 12 months.*
 
 
-**6. total revenue by subscription type**
+**Total revenue by subscription type**
 ````sql
 select SubscriptionType, sum(Revenue) as TotalRevenue 
 from sub
@@ -161,7 +161,7 @@ group by SubscriptionType
 	
 Basic subscription which is the most popular amongst customers also generated the most revenue. 
 
-**7. top 3 regions by subscription cancellations** 
+**Top 3 regions by subscription cancellations** 
 ````sql
 select top 3 Region, count(CustomerID) as CanceledSubscriptions 
 from Sub
@@ -178,7 +178,7 @@ order by CanceledSubscriptions desc
 
 The North has the highest number of cancelled subscriptions, followed by the South region. 
 
-**8. total number of active and canceled subscriptions** 
+**Total number of active and canceled subscriptions** 
 ````sql
 -- Active subscriptions are those where Canceled = 0 (False).
 -- Canceled subscriptions are those where Canceled = 1 (True).
@@ -193,7 +193,7 @@ from sub
 | --- | --- |
 | 18612	| 15175 |
 
---churn rate in each region
+**Churn rate in each region**
 ````sql
 Select Region, 
        count(CustomerID) as TotalCustomers, 
@@ -203,17 +203,15 @@ from sub
 group by Region
 ````
 **Output** 
-| ActiveSubscriptions | CanceledSubscriptions |
-| --- | --- |
-| 18612	| 15175 |
-Region	TotalCustomers	CanceledCustomers	ChurnRate
-North	8433	5067	60.085378868729
-East	8488	0	0.000000000000
-South	8446	5064	59.957376272791
-West	8420	5044	59.904988123515
+| Region | TotalCustomers | CanceledCustomers | ChurnRate |
+| --- | --- | --- | --- |
+| North	| 8433 | 5067 | 60.085378868729 |
+| East | 8488 | 0 | 0.000000000000 |
+| South | 8446 | 5064 | 59.957376272791|
+| West | 8420 | 5044 | 59.904988123515 |			
 
 
---churn rate by subscription
+**Churn rate by subscription**
 ````sql
 Select SubscriptionType, 
        count(CustomerID) as TotalCustomers, 
@@ -223,15 +221,14 @@ from sub
 group by SubscriptionType
 ````
 **Output** 
-| ActiveSubscriptions | CanceledSubscriptions |
-| --- | --- |
-| 18612	| 15175 |
-SubscriptionType	TotalCustomers	CanceledCustomers	ChurnRate
-Basic	16921	5067	29.945038709296
-Premium	8446	5064	59.957376272791
-Standard	8420	5044	59.904988123515
+| SubscriptionType | TotalCustomers | CanceledCustomers | ChurnRate |
+| --- | --- | --- | --- |
+| Basic	| 16921 | 5067 | 29.945038709296 |
+| Premium | 8446 | 5064 | 59.957376272791 |
+| Standard | 8420 | 5044 | 59.904988123515 |	
+			
 
---Revenue generated from each customer
+**Revenue generated from each customer**
 ````
 select distinct CustomerID, sum(Revenue) as TotalRevenuePerCustomer
 from sub
@@ -241,81 +238,61 @@ order by TotalRevenuePerCustomer desc
 **Output** 
 | CustomerID | TotalRevenuePerCustomer |
 | --- | --- |
-| 18612	| 15175 |
-211	3437444
-207	3427436
-218	3414995
-220	3399895
-212	3398288
-202	3395374
-216	3385349
-210	3384539
-201	3378897
-203	3377675
-217	3376796
-209	3365221
-215	3361350
-214	3357269
-219	3354858
-208	3354682
-213	3351225
-206	3346887
-205	3345833
-204	3326162
+| 211	| 3437444 |
+| 207	| 3427436 |
+| 218	| 3414995 |
+| 220	| 3399895 |
+| 212	| 3398288 |
+| 202	| 3395374 |
+| 216	| 3385349 | 
+| 210	| 3384539 |
+| 201	| 3378897 |
+| 203	| 3377675 |
+| 217	| 3376796 |
+| 209	| 3365221 |
+| 215	| 3361350 |
+| 214	| 3357269 |
+| 219	| 3354858 |
+| 208	| 3354682 |
+| 213	| 3351225 |
+| 206	| 3346887 |
+| 205	| 3345833 |
+| 204	| 3326162 |
 
 --customer by number of subscription
 ````sql
-select distinct CustomerName, count(CustomerID) as NumberofSubscriptions
+select distinct CustomerID, count(CustomerID) as NumberofSubscriptions
 from sub
-group by CustomerName
+group by CustomerID
 order by NumberofSubscriptions desc
 ````
 **Output** 
-| CustomerName | NumberofSubscriptions |
+| CustomerID | NumberofSubscriptions |
 | --- | --- |
-| Liam	| 1718 |
-| Mike	| 1714 |
-| Anna	| 1700 |
-| Sophia| 1699 |
-| Nina	| 1695 |
-| Jane	| 1693 |
-| John	| 1693 |
-| Eva	| 1692 |
-| Chris	| 1692 |
-| Rob	| 1690 |
-| Alex	| 1690 |
-| Grace	| 1687 |
-| Paul	| 1686 |
-| Tom	| 1685 |
-| Zoe	| 1683 |
-| Dan	| 1680 |
-| Ella	| 1679 |
-| Sara	| 1676 |
-| James	| 1673 |
-| Maria	| 1662 |
+| 211	| 1718 |
+| 207	| 1714 |
+| 212	| 1700 |
+| 218	| 1699 |
+| 220	| 1695 |
+| 202	| 1693 |
+| 201	| 1693 |
+| 213	| 1692 |
+| 210	| 1692 |
+| 217	| 1690 |
+| 203	| 1690 |
+| 216	| 1687 |
+| 215	| 1686 |
+| 209	| 1685 |
+| 214	| 1683 |
+| 219	| 1680 |
+| 206	| 1679 |
+| 208	| 1676 |
+| 205	| 1673 |
+| 204	| 1662 |
 
-211	1718
-207	1714
-212	1700
-218	1699
-220	1695
-202	1693
-201	1693
-213	1692
-210	1692
-217	1690
-203	1690
-216	1687
-215	1686
-209	1685
-214	1683
-219	1680
-206	1679
-208	1676
-205	1673
-204	1662
 
---avg number of subscription
+
+**Average number of subscriptions per customer**
 ````sql
 select count(CustomerID)/count(distinct CustomerID) as AvgNumberofSubscriptions
 from sub
