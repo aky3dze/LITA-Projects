@@ -76,7 +76,7 @@ select *
 from sub
 ````
 
-**Total number of customers from each region**
+**1. Total number of customers from each region**
 ````sql
 select Region, count(distinct CustomerID) as TotalCustomers
 from sub
@@ -93,7 +93,7 @@ group by Region
 _Insight:_ The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
-**Most popular subscription type by the number of customers**
+**2. Most popular subscription type by the number of customers**
 ````sql
 select top 1 SubscriptionType, count(distinct CustomerID) as CustomerCount
 from sub
@@ -107,14 +107,16 @@ group by SubscriptionType
 _Insight:_ Basic subscription is the most popular among customers, indicating a higher preference for basic subscription services.
 	
 
-**Customers who cancelled their subscription within 6 months**
+**3. Customers who cancelled their subscription within 6 months**
 ````sql 
 select distinct CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd 
 from sub
 where Canceled = 1 and DATEDIFF(month, SubscriptionStart, SubscriptionEnd)  <=6
 ````
 **Output** 
-_Insight:_ No customer cancelled their subscription within 6 months.
+No customer cancelled their subscription within 6 months.
+
+_Insight:_
 
 
 **Calculate the average subscription duration for all customers**
