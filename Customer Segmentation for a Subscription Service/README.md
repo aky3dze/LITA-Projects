@@ -304,30 +304,26 @@ from sub
 
 
 ## Findings
-**1. Total number of customers from each region**
+**1. Customers from each region**
 The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
-**2. Most popular subscription type by the number of customers**
-Basic subscription is the most popular among customers, indicating a higher preference for basic subscription services.
-	
+**2. Popularity of basic subscription**
+Basic subscription is the most popular among customers, and generates the most revenue.This higher preference for basic subscription plan suggests that customers are more inclined towards cost effective plans which meet their basic needs
+
 
 **3. Customers who cancelled their subscription within 6 months**
-No customer cancelled their subscription within 6 months.
 No subscription cancellation within 6 months may suggest that customers had a satisfactory onboarding experience, hence the good initial retention.
 
 
-**4.Average subscription duration for all customers**
-The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year.
+**4.Average subscription duration**
+The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year. 
 
 **5. Customers with subscriptions longer than 12 months**
 No customer had their subscription longer than 12 months.
 
 The lack of customer subscriptions beyond 12 months, may suggest the need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
 
-
-**6. Total revenue by subscription type**
-Basic subscription which is the most popular amongst customers also generated the most revenue. 
 
 **7. Top 3 regions by subscription cancellations** 
 The North has the highest number of cancelled subscriptions, followed by the South region. 
