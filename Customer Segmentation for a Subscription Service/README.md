@@ -317,7 +317,7 @@ No customer cancelled their subscription within 6 months.
 No subscription cancellation within 6 months may suggest that customers had a satisfactory onboarding experience, hence the good initial retention.
 
 
-**4. Calculate the average subscription duration for all customers**
+**4.Average subscription duration for all customers**
 The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year.
 
 **5. Customers with subscriptions longer than 12 months**
