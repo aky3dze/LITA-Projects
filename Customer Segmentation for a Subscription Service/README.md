@@ -189,35 +189,36 @@ from sub
 | 18612	| 15175 |
 
 
-**9. Churn rate in each region**
+**9. Number of cancellations in each region by subscription type**
 ````sql
-Select Region, 
-       count(CustomerID) as TotalCustomers, 
-       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledCustomers,
-       (sum(case when Canceled = 1 then 1 else 0 end) * 100.0 / count(CustomerID)) as ChurnRate
+Select Region, SubscriptionType,
+       count(CustomerID) as TotalSubscriptions, 
+       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledSubscriptions
 from sub
-group by Region
+group by Region, SubscriptionType
+order by TotalSubscriptions desc
 ````
 **Output** 
-| Region | TotalCustomers | CanceledCustomers | ChurnRate |
+| Region | SubscriptionType | TotalSubscriptions | CanceledSubscriptions |
 | --- | --- | --- | --- |
-| North	| 8433 | 5067 | 60.085378868729 |
-| East | 8488 | 0 | 0.000000000000 |
-| South | 8446 | 5064 | 59.957376272791|
-| West | 8420 | 5044 | 59.904988123515 |	
+| East | Basic | 8488 | 0 | 
+| South | Premium | 8446 | 5064 |
+| North	| Basic | 8433 | 5067 | 
+| West | Standard | 8420 | 5044 | 	
 
 
-**10. Churn rate by subscription**
+
+**10. Churn rate by subscription type**
 ````sql
 Select SubscriptionType, 
-       count(CustomerID) as TotalCustomers, 
-       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledCustomers,
+       count(CustomerID) as TotalSubscriptions, 
+       sum(case when Canceled = 1 then 1 else 0 end) as  CanceledSubscriptions,
        (sum(case when Canceled = 1 then 1 else 0 end) * 100.0 / count(CustomerID)) as ChurnRate
 from sub
 group by SubscriptionType
 ````
 **Output** 
-| SubscriptionType | TotalCustomers | CanceledCustomers | ChurnRate |
+| SubscriptionType | TotalSubscriptions | CanceledSubscriptions | ChurnRate |
 | --- | --- | --- | --- |
 | Basic	| 16921 | 5067 | 29.945038709296 |
 | Premium | 8446 | 5064 | 59.957376272791 |
@@ -256,7 +257,7 @@ order by TotalRevenuePerCustomer desc
 | 204	| 3326162 |
 
 
-**12. Customer by number of subscriptions**
+**12. Number of subscriptions per customer**
 ````sql
 select distinct CustomerID, count(CustomerID) as NumberofSubscriptions
 from sub
@@ -300,7 +301,10 @@ from sub
 
 
 ## Data visualization
-![Screenshot 2024-10-28 004111](https://github.com/user-attachments/assets/91f9ad7c-e8e4-4195-ad07-26e290130c56)
+![Screenshot 2024-10-29 000243](https://github.com/user-attachments/assets/4277160a-1231-406f-bc06-f2baf8e25ac5)
+![Screenshot 2024-10-29 000449](https://github.com/user-attachments/assets/a464c939-127b-4355-9f61-74c4b08c6941)
+![Screenshot 2024-10-29 000514](https://github.com/user-attachments/assets/c1d2e8a3-7f4e-4d4a-8d28-9f7f0b0ad1b1)
+
 
 
 ## Findings
