@@ -23,17 +23,31 @@ For this project, I will analyse the sales performance of a retail store. I will
 
 
 ## Data Source and Overview
-
-LITA
+This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
+- `OrderID` - A unique identifier for each order.
+- `Customer Id` - ID representing individual customers.
+- `Product` - The type of product sold (e.g., Shirt, Shoes).
+- `Region` - The geographical area where the sale occurred (North, South, etc.).
+- `OrderDate` - The date when the order was placed.
+- `Quantity` - The number of units ordered.
+- `UnitPrice` - The price per unit of the product.
 
 ## Tools and concepts applied
-- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/)
-  1. for data cleaning
-  2. for analysis
+the following tools and concepts were used for data processing, analysis and visualization: 
+- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - for data cleaning and initial analysis
      
-- SQL for extracting key insights
-- PowerBi for visualization
-- Github for portfolio building
+- SQL server - for querying and extracting key insights
+  	- The following SQL 
+  	 1. Aggregate functions
+  	 2. Case expression
+  	     
+- PowerBi - for data visualization and dashboard creation
+	- The following PowerBi features were incorporated:
+   	 1. Measures
+   	 2. Calculated columns
+   	 3. DAX
+   	    
+- Github - to showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
 data loading and inspection
@@ -117,9 +131,10 @@ group by Item
 ````
 
 ## Data visualization
+![Screenshot 2024-10-30 002122](https://github.com/user-attachments/assets/d6cb9d39-6ed6-4a0c-83ff-b88796afc615)
 
 
-## Findings]
+## Findings
 
 ## Conclusions and Recommendations
 
