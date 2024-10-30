@@ -317,17 +317,17 @@ The PowerBi dashboard provides an interactive interface, allowing for filtering 
 
 
 ## Findings
-**1. Customers from each region**
+**1. Regional distribution of customers**
 The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
 **2. Popularity and total revenue generated based on subscription type**
 Basic subscription is the most popular, with 10 customers choosing it over Premium and Standard.  This higher preference suggests that many customers are more inclined towards cost-effective plans which meet their basic needs.
 
-Additionally, Basic subscription generates the most revenue, **33,776,735**, followed by Premium and Standard. 
+Additionally, Basic subscription generates the most revenue, **33,776,735**, followed by Premium and Standard, 16,899,064 and 16,864,376, respectively. Higher revenue is expected as it is the most popular type of subscription. These results highlight the possibility of upselling or cross-selling. Thus, encouraging customers with basic subscriptions to get other subscription types or upgrade to a higher-tier subscription, thereby bringing in more revenue
 
 
-**3. Customers who cancelled their subscription within 6 months**
+**3. Subscription cancellations  within 6 months**
 No customer cancelled their subscriptions within the first 6 months. This may indicate a satisfactory initial onboarding experience among customers, hence the absence of early churn.
 
 
@@ -335,18 +335,19 @@ No customer cancelled their subscriptions within the first 6 months. This may in
 The average subscription duration is approximately 365 days (12 months), which indicates that customers completed an annual subscription cycle before deciding to cancel or renew. This indicates a somewhat stable customer base as most customers within the period.
 
 
-**5. Customers with subscriptions longer than 12 months**
+**5. Subscriptions longer than 12 months**
 No customer had their subscription longer than 12 months.
 The lack of customer subscriptions beyond 12 months, may suggest that:
 - The data was gathered at the end of the annual subscription period
 - There is a need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
 
 
-**7. Top 3 regions by subscription cancellations** 
-The North has the highest number of cancelled subscriptions, followed by the South region. 
+**6. Regions by subscription cancellations** 
+The North has the highest number of cancelled subscriptions (5,067), followed by the South (5,064) and West (5,044). 
+north basic, south premium west standard
 
-**8. Total number of active and canceled subscriptions**
-Active subscriptions are higher than the cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
+**8. Total number of active and cancelled subscriptions**
+Active subscriptions are higher than cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
 
 **9. Churn rate in each region**
 High churn rate in the North, South and West regions may indicate a need for targeted retention strategies and efforts.
