@@ -364,7 +364,10 @@ The average number of subscriptions per customer is 1689, which gives a general 
 
 
 ## Conclusions and Recommendations 
-Based on these findings, the conclusion and recommendations to improve retention or customer engagement and reduce churn include:
+- The North region has the highest churn and brings in the least revenue.
+- Higher-tier subscriptions had higher churn rates compared to basic subscriptions.
+
+Based on these findings, the recommendations to improve retention or customer engagement and reduce churn include:
 - Implement targeted customer retention strategies in regions, North, South, and West.
 - Incentives or strategies to encourage customers on basic subscriptions to go for higher-tier plans.
 - Implement long-term plans to ensure multi-year subscriptions.
@@ -376,6 +379,9 @@ By implementing these recommendations, the company can maximize revenue, solidif
 
 ## Limitations
 - The dataset is limited to one table with a single subscription period, and no demographic data. Thus, customer behaviour across different seasons may not be fully captured in the analysis. Additionally, the effects of demographic patterns could enhance our understanding of churn and retention rates.
+
+😊💻
+🔗[insert power bi link here]
 
 
 
