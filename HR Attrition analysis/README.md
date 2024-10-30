@@ -1,6 +1,7 @@
 # HR attrition
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5a96f4ac-66f4-4013-9162-25b68efb0daf" width="800" height="400">
+
+<img src="https://github.com/user-attachments/assets/6c163380-696d-4b70-a55e-e3429c70b4e6" width="800" height="400">
 
 
 
