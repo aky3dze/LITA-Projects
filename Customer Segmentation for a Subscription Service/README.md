@@ -342,32 +342,29 @@ The lack of customer subscriptions beyond 12 months, may suggest that:
 - There is a need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
 
 
-**6. Regions by subscription cancellations** 
-The North has the highest number of cancelled subscriptions (5,067), followed by the South (5,064) and West (5,044). 
-north basic, south premium west standard
+**6. Cancellations by region and subscription type** 
+The data indicates that subscription types vary by region, with customers in the north and east subscribing to only Basic, those in the south to Premium and others in the west, to Standard. The North has the highest number of cancelled subscriptions (5,067), followed by the South (5,064) and West (5,044). This may indicate a need for targeted or localised retention strategies and efforts. To avoid the concentration of one subscription type in one region, Customers may need to be offered an array of subscriptions to choose from before onboarding. Also, retention strategies implemented in the East could be applied in the other regions.
+
 
 **8. Total number of active and cancelled subscriptions**
-Active subscriptions are higher than cancelled subscriptions, reflecting a relatively higher retention rate. The higher number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
-
-**9. Churn rate in each region**
-High churn rate in the North, South and West regions may indicate a need for targeted retention strategies and efforts.
+Active subscriptions are higher than cancelled subscriptions, reflecting a relatively positive retention rate. However, the high number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
 
 
-**10. Churn rate by subscription**
-Premium and Standard subscription plans experienced a higher churn rate, implying that customer expectations were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received.
+**9. Churn rate by subscription**
+Premium and Standard subscription plans experienced higher churn rates, 59.96% and 59.90%, respectively, while Basic had a significantly lower churn rate (29.94). This may imply that the expectations of customers on higher-tier subscriptions were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received. Plans may be to review the current subscription plans and add better-aligned features or additional services.
 
-**11. Revenue generated from each customer**
-Customers contributing significantly to the overall revenue could be introduced to a loyalty program or exclusive offers to retain them.
 
-**12. Customer by number of subscriptions**
+**10. Revenue per customer**
+Customers contributing significantly to the overall revenue could be introduced to a loyalty program or exclusive offers to retain them and reinforce their commitment.
 
 
 
-**13. Average number of subscriptions per customer**
-The average number of subscriptions per customer gives a general overview of customer engagement.
+**11. Average number of subscriptions per customer**
+The average number of subscriptions per customer is 1689, which gives a general overview of customer engagement. 
 
 
 ## Conclusions and Recommendations 
+Based on these findings, the conclusion and recommendations to improve retention or customer engagement and reduce churn include:
 - Implement targeted customer retention strategies in regions North, South, and West
 - Incentives or strategies to encourage customers on basic subscriptions to go for higher-tier plans
 - Implement long-term plans
