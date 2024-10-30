@@ -7,7 +7,7 @@
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
-- [Tools](#tools)
+- [Tools and Techniques](#tools-and-techniques)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data visualization](#data-visualization)
@@ -16,7 +16,7 @@
 - [Limitations](#limitations)
 
 ## Project Overview 
-For this project, I will analyse the sales performance of a retail store. I will explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. I aim to produce an interactive Power BI dashboard that highlights these findings.
+This project involves an in-depth analysis of the sales performance of a retail store. The analysis explores sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The project culminates in an interactive Power BI dashboard that highlights these findings.
 
 
 ## Objectives
@@ -36,30 +36,33 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 - `Quantity` - The number of units ordered.
 - `UnitPrice` - The price per unit of the product.
 
-## Tools and concepts applied
-The following tools and concepts were used for data processing, analysis and visualization: 
-- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - for data cleaning and initial analysis
+## Tools and techniques
+The following tools and concepts were employed for data processing, analysis and visualization: 
+- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - For initial data cleaning and analysis
      
-- SQL server - for querying and extracting key insights
+- SQL server - For querying and extracting key insights
   	- The following SQL techniques were used:
   	 1. Aggregate functions
-  	 2. Subqueries
+  	 2. Subqueries and conditional filtering
   	     
-- PowerBi - for data visualization and dashboard creation
+- Power BI - For data visualization and dashboard creation
 	- The following PowerBi features were incorporated:
    	 1. Measures
-   	 2. Calculated columns
-   	 3. DAX
+   	 2. DAX
    	    
-- Github - to showcase this project as part of a portfolio 
+- Github - To showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
-data loading and inspection
-handling missing variables
-data cleaning and formating
+- Data loading and inspection: The raw data was initially loaded in Excel, and checked for missing values, duplicates and consistency in data format.
+- Data cleaning and formatting: This involved removing duplicates.
+- Calculation of subscription duration (in days) using the Excel formula `= Quantity*UnitPrice`
+- Loading data into SQL server and Power BI; data types were reviewed accordingly.
 
-### Exploratory data analysis
----
+
+## Exploratory Data Analysis
+Exploratory Data Analysis (EDA) was conducted using SQL to uncover key sales insights, such as identifying top products, analyzing sales by region, and identifying monthly trends.
+
+### SQL Queries Used in Analysis:
 ````sql
 --Product renamed as Item
 
@@ -204,8 +207,13 @@ group by Item
 
 
 ## Findings
+**1. Top-Selling Products:**
+**2. Regional Sales Distribution:** 
 
 ## Conclusions and Recommendations
 
 ## Limitations
+- The dataset is limited to one table with a single subscription period, and no demographic data. Thus, 
 
+😊💻
+🔗[insert power bi link here]
