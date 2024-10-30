@@ -19,7 +19,7 @@
 
 
 ## Project Overview
-This project analyses customer data for a subscription service to identify segments and trends. The report outlines key insights from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
+This project analyses customer data for a subscription service to identify segments and trends. The report outlines key insights from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour related to subscription types, retention, cancellations, revenue patterns, and regional differences.
 
 
 ## Objectives
@@ -317,14 +317,14 @@ The PowerBi dashboard provides an interactive interface, allowing for filtering 
 
 
 ## Findings
-**1. Regional distribution of customers**
+**1. Regional distribution of customers:**
 The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
-**2. Popularity and total revenue generated based on subscription type**
-Basic subscription is the most popular, with 10 customers choosing it over Premium and Standard.  This higher preference suggests that many customers are more inclined towards cost-effective plans which meet their basic needs.
+**2. Popularity and total revenue generated based on subscription type:**
+Basic subscription is the most popular, with 10 customers choosing it over Premium and Standard plans.  This higher preference suggests that many customers are more inclined towards cost-effective plans which meet their basic needs.
 
-Additionally, Basic subscription generates the most revenue, **33,776,735**, followed by Premium and Standard, 16,899,064 and 16,864,376, respectively. Higher revenue is expected as it is the most popular type of subscription. These results highlight the possibility of upselling or cross-selling. Thus, encouraging customers with basic subscriptions to get other subscription types or upgrade to a higher-tier subscription, thereby bringing in more revenue
+Additionally, Basic subscription generates the most revenue, **33,776,735**, followed by Premium and Standard, 16,899,064 and 16,864,376, respectively. Higher revenue is expected as it is the most popular type of subscription. These results highlight the possibility of upselling or cross-selling, i.e., encouraging customers with basic subscriptions to get other subscription types or upgrade to a higher-tier subscription, thereby driving potential revenue growth.
 
 
 **3. Subscription cancellations  within 6 months**
@@ -332,43 +332,45 @@ No customer cancelled their subscriptions within the first 6 months. This may in
 
 
 **4.Average subscription duration**
-The average subscription duration is approximately 365 days (12 months), which indicates that customers completed an annual subscription cycle before deciding to cancel or renew. This indicates a somewhat stable customer base as most customers within the period.
+The average subscription duration is approximately 365 days (12 months), which indicates that customers completed an annual subscription cycle before deciding to cancel or renew. This indicates a somewhat stable customer base within this period.
 
 
 **5. Subscriptions longer than 12 months**
-No customer had their subscription longer than 12 months.
+No customer has their subscription longer than 12 months.
 The lack of customer subscriptions beyond 12 months, may suggest that:
 - The data was gathered at the end of the annual subscription period
 - There is a need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
 
 
 **6. Cancellations by region and subscription type** 
-The data indicates that subscription types vary by region, with customers in the north and east subscribing to only Basic, those in the south to Premium and others in the west, to Standard. The North has the highest number of cancelled subscriptions (5,067), followed by the South (5,064) and West (5,044). This may indicate a need for targeted or localised retention strategies and efforts. To avoid the concentration of one subscription type in one region, Customers may need to be offered an array of subscriptions to choose from before onboarding. Also, retention strategies implemented in the East could be applied in the other regions.
+The data indicates that subscription types vary by region, with customers in the north and east subscribing to only Basic, those in the south to Premium and others in the west, to Standard. The North has the highest number of cancelled subscriptions (5,067), followed by the South (5,064) and West (5,044). This may indicate a need for targeted or localised retention strategies and efforts. To avoid the concentration of one subscription type in one region, customers may need to be offered an array of subscriptions to choose from before onboarding. Also, retention strategies implemented in the East could be applied in the other regions.
 
 
-**8. Total number of active and cancelled subscriptions**
-Active subscriptions are higher than cancelled subscriptions, reflecting a relatively positive retention rate. However, the high number of cancellations is a cause for concern and so measures should be put in place to improve the value of services offered as well as customer engagement.
+**7. Active vs. cancelled subscriptions**
+Active subscriptions outnumber cancelled subscriptions, reflecting a relatively positive retention rate. However, the high number of cancellations is a cause for concern. To address this, measures should be put in place to improve the value of services offered as well as customer engagement.
 
 
-**9. Churn rate by subscription**
-Premium and Standard subscription plans experienced higher churn rates, 59.96% and 59.90%, respectively, while Basic had a significantly lower churn rate (29.94). This may imply that the expectations of customers on higher-tier subscriptions were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received. Plans may be to review the current subscription plans and add better-aligned features or additional services.
+**8. Churn rate by subscription type**
+Premium and Standard subscription plans experienced higher churn rates, 59.96% and 59.90%, respectively, while Basic had a significantly lower churn rate (29.94). This may imply that the customers' expectations of higher-tier subscriptions were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received. Plans may be to review the current subscription plans and add better-aligned features or additional services.
 
 
-**10. Revenue per customer**
+**9. Revenue per customer**
 Customers contributing significantly to the overall revenue could be introduced to a loyalty program or exclusive offers to retain them and reinforce their commitment.
 
 
 
-**11. Average number of subscriptions per customer**
+**10. Average number of subscriptions per customer**
 The average number of subscriptions per customer is 1689, which gives a general overview of customer engagement. 
 
 
 ## Conclusions and Recommendations 
 Based on these findings, the conclusion and recommendations to improve retention or customer engagement and reduce churn include:
-- Implement targeted customer retention strategies in regions North, South, and West
-- Incentives or strategies to encourage customers on basic subscriptions to go for higher-tier plans
-- Implement long-term plans
-- Introduce loyalty programs
+- Implement targeted customer retention strategies in regions, North, South, and West.
+- Incentives or strategies to encourage customers on basic subscriptions to go for higher-tier plans.
+- Implement long-term plans to ensure multi-year subscriptions.
+- Introduce loyalty programs to reward high-revenue customers.
+
+By implementing these recommendations, the company can maximize revenue, solidify its customer base and enhance its market reach.
 
 
 
