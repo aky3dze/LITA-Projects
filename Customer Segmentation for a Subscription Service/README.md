@@ -19,7 +19,7 @@
 
 
 ## Project Overview
-This project analyses customer data for a subscription service to identify segments and trends. The report outlines key insights derived from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
+This project analyses customer data for a subscription service to identify segments and trends. The report outlines key insights from customer subscription data using Microsoft Excel, SQL queries, and PowerBi. The analysis focuses on various aspects of customer behaviour, such as subscription retention, cancellations, revenue generation, and regional differences.
 
 
 ## Objectives
@@ -29,11 +29,11 @@ The analysis aims to:
 - Identify key trends in cancellations and renewals
 - Calculate key business metrics such as customer retention, churn, and revenue
 - Provide actionable insights that could help optimise customer engagement strategies
-- The final deliverable will be a Power BI dashboard that presents my analysis. 
+The final deliverable will be a Power BI dashboard visually presenting these insights. 
 
 
 ## Data Source and Overview
-This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
+This data was obtained from the Ladies in Tech Africa (LITA) capstone project. The data is structured in a single table with the following attributes:
 
 - `CustomerID` – Unique identifier for each customer.
 - `CustomerName` – Name of the customer.
@@ -46,27 +46,27 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 
 
 ## Tools and concepts applied
-the following tools and concepts were used for data processing, analysis and visualization: 
-- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - for data cleaning and initial analysis
+The following tools and concepts were used for data processing, analysis and visualization: 
+- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - Used for initial data cleaning and analysis.
      
-- SQL server - for querying and extracting key insights
-  	- The following SQL 
+- SQL Server - For querying and extracting key insights from the data
+  	- The following SQL techniques were used: 
   	 1. Aggregate functions
-  	 2. Case expression
+  	 2. `Case` expression
   	     
-- PowerBi - for data visualization and dashboard creation
+- Power BI - For further data analysis, visualization and dashboard creation
 	- The following PowerBi features were incorporated:
    	 1. Measures
    	 2. Calculated columns
    	 3. DAX
    	    
-- Github - to showcase this project as part of a portfolio 
+- Github - To showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
-- data loading and inspection: the raw data was loaded first in Excel, and checked for missing values, duplicates and consistency in data format 
-data cleaning and formatting to remove duplicates 
-subscription duration calculated in Excel using `= SubscriptionEnd - SubscriptionStart`
-- loading into SQL server and PowerBi; data types reviewed accordingly
+- Data loading and inspection: The raw data was initially loaded in Excel, and checked for missing values, duplicates and consistency in data format.
+- Data cleaning and formatting: This involved removing duplicates.
+- Calculation of subscription duration (in days) using the Excel formula `= SubscriptionEnd - SubscriptionStart`
+- Loading data into SQL server and Power BI; data types were reviewed accordingly.
 
 
 ## Exploratory Data Analysis
@@ -321,21 +321,25 @@ The PowerBi dashboard provides an interactive interface, allowing for filtering 
 The customer distribution is equal across the different regions, suggesting a balanced market reach.
 
 
-**2. Popularity of basic subscription**
-Basic subscription is the most popular among customers, and generates the most revenue.This higher preference for basic subscription plan suggests that customers are more inclined towards cost effective plans which meet their basic needs
+**2. Popularity and total revenue generated based on subscription type**
+Basic subscription is the most popular, with 10 customers choosing it over Premium and Standard.  This higher preference suggests that many customers are more inclined towards cost-effective plans which meet their basic needs.
+
+Additionally, Basic subscription generates the most revenue, **33,776,735**, followed by Premium and Standard. 
 
 
 **3. Customers who cancelled their subscription within 6 months**
-No subscription cancellation within 6 months may suggest that customers had a satisfactory onboarding experience, hence the good initial retention.
+No customer cancelled their subscriptions within the first 6 months. This may indicate a satisfactory initial onboarding experience among customers, hence the absence of early churn.
 
 
 **4.Average subscription duration**
-The average subscription duration is approximately 365 days (12 months), which indicates a somewhat stable customer base as most customers stayed as subscribers for at least one year. 
+The average subscription duration is approximately 365 days (12 months), which indicates that customers completed an annual subscription cycle before deciding to cancel or renew. This indicates a somewhat stable customer base as most customers within the period.
+
 
 **5. Customers with subscriptions longer than 12 months**
 No customer had their subscription longer than 12 months.
-
-The lack of customer subscriptions beyond 12 months, may suggest the need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
+The lack of customer subscriptions beyond 12 months, may suggest that:
+- The data was gathered at the end of the annual subscription period
+- There is a need for long-term subscriptions, 2 or 5 years, apart from annual subscriptions. These long-term plans could come with incentives and discounts.
 
 
 **7. Top 3 regions by subscription cancellations** 
