@@ -15,5 +15,5 @@ Each project folder contains a dedicated README with an overview, objectives, de
 
 ## Contributions
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request.🤗
 
