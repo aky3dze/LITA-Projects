@@ -1,4 +1,4 @@
-# HR attrition
+# HR attrition analysis
 <p align="center">
 
 <img src="https://github.com/user-attachments/assets/6c163380-696d-4b70-a55e-e3429c70b4e6" width="800" height="400">
@@ -15,16 +15,13 @@
 - [Limitations](#limitations)
 
 ## Project Overview 
-
+This project analyses an HR attrition dataset to identify key factors contributing to employee turnover. High attrition rates can lead to increased costs and loss of valuable knowledge within an organization, making it crucial for HR teams to understand and address the drivers behind employee departures.
 
 
 ## Objectives
-An HR attrition report typically provides insights into employee turnover within an organization. This report is crucial for human resources departments and company leadership to understand why employees are leaving and identify potential improvement areas.
+- Identify key factors that influence employee attrition, such as job satisfaction, work environment, and compensation.
+- Provide actionable insights to help the HR department create targeted strategies for improving employee retention.
 
-
-## Objective
-
-This project aims to develop a Power BI Dashboard to comprehend employee attrition and explore the factors contributing to turnover, facilitating the development of effective retention strategies. The goal is to enhance retention and strengthen the workforce through actionable insights presented in the dashboard.
 
 ## Questions
 
@@ -38,9 +35,8 @@ This project aims to develop a Power BI Dashboard to comprehend employee attriti
 8. Is there a difference in attrition rates between high-performance and low-performance employees?
 9. How does the work-life balance affect attrition? Do employees tend to quit when work-life balance is low?
 
-## Dataset
 ## Data Source and Overview
-This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. The data is structured in a single table with the following attributes:
+This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset is available in the file list above.
 
 
 The dataset, sourced from Kaggle, IBM HR Analytics Employee Attrition & Performance, includes details such as employee demographics, job attributes, performance ratings, and attrition status, facilitating analysis and understanding of turnover factors.
