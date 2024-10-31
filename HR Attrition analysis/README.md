@@ -36,31 +36,7 @@ This project analyses an HR attrition dataset to identify key factors contributi
 9. How does the work-life balance affect attrition? Do employees tend to quit when work-life balance is low?
 
 ## Data Source and Overview
-This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset is available in the file list above.
-
-
-The dataset, sourced from Kaggle, IBM HR Analytics Employee Attrition & Performance, includes details such as employee demographics, job attributes, performance ratings, and attrition status, facilitating analysis and understanding of turnover factors.
-
-
-
-## Installation/Usage
-
-To use the HR Attrition Analysis Dashboard, follow these steps:
-
-1. **Install Power BI Desktop:** Download and install Power BI Desktop from the official Power BI Download Site.
-2. **Download Dataset:** Download the dataset from the link provided in the Dataset section.
-3. **Clone or Download this Repository:** Clone or download this repository to your local machine.
-4. **Open Dashboard:** Open the dashboard report file (HR-attrition-dashboard.pbix) in Power BI Desktop to access & explore the interactive dashboard's features.
-
-
-
-## Conclusion
-
-
-
-
-
-
+This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset includes attributes such as employee demographics, performance ratings, and attrition status. It is available in the file list above.
 
 
 ## Tools and concepts applied
@@ -70,7 +46,6 @@ To use the HR Attrition Analysis Dashboard, follow these steps:
    	 2. Calculated columns
    	 3. DAX
    	    
-- Github - to showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
 data loading and inspection
