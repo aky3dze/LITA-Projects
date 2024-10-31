@@ -1,4 +1,4 @@
-# HR attrition analysis
+# HR Attrition Analysis
 <p align="center">
 
 <img src="https://github.com/user-attachments/assets/6c163380-696d-4b70-a55e-e3429c70b4e6" width="800" height="400">
