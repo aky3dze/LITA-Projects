@@ -52,7 +52,9 @@ The following tools and concepts were used for data processing, analysis and vis
 - SQL Server - For querying and extracting key insights from the data
   	- The following SQL techniques were used: 
   	 1. Aggregate functions
-  	 2. `Case` expression
+  	 2. SQL clauses
+  	 3. `Case` expression
+  	 4. Date function
   	     
 - Power BI - For further data analysis, visualization and dashboard creation
 	- The following PowerBi features were incorporated:
