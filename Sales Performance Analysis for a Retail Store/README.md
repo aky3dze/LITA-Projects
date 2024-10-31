@@ -48,7 +48,7 @@ The following tools and concepts were employed for data processing, analysis and
 - Power BI - For data visualization and dashboard creation
 	- The following PowerBi features were incorporated:
    	 1. Measures
-   	 2. DAX
+   	 2. DAX functions (CALCULATE, SUM, DIVIDE, etc)
    	    
 - Github - To showcase this project as part of a portfolio 
 
@@ -207,8 +207,41 @@ group by Item
 
 
 ## Findings
-**1. Top-Selling Products:**
-**2. Regional Sales Distribution:** 
+The findings will be broken down into three parts; Overall, 2023, and 2024
+
+- Overall
+  ---
+ **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+
+**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
+hat emerged as the top-selling product followed by shoes.
+
+**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+
+**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+
+- 2023
+  ---
+ **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+
+**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
+hat emerged as the top-selling product followed by shoes.
+
+**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+
+**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+
+- 2024
+  ---
+ **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+
+**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
+hat emerged as the top-selling product followed by shoes.
+
+**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+
+**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+
 
 ## Conclusions and Recommendations
 
