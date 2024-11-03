@@ -274,7 +274,7 @@ The following conclusion can be drawn from the analysis:
 The recommendations drawn from the analysis are as follows:
 - Inventory for top-selling products such as shoes and hats should be increased especially during peak months.
 - Marketing efforts should be increased in the West region to boost sales.
-- 
+  
 
 
 ## Limitations
