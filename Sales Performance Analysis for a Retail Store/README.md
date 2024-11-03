@@ -208,13 +208,13 @@ Power BI was used to create interactive visuals that bring the data insights to 
 
 ![Screenshot 2024-11-03 175846](https://github.com/user-attachments/assets/c05b5d7d-b43a-438c-8859-63ac6755d7ab)
 **Figure 1**
-<br>
+<be>
 
-![Screenshot 2024-11-03 175719](https://github.com/user-attachments/assets/dd43eaf9-d9e0-4048-a52a-472dc5a3640e)
+![Screenshot 2024-11-03 180753](https://github.com/user-attachments/assets/fc4ae39f-8509-47db-ac82-97264ae06e40)
 **Figure 2**
 <br>
 
-![Screenshot 2024-11-03 175747](https://github.com/user-attachments/assets/aac4e01c-e29b-4216-83af-3a40c09f041b)
+![Screenshot 2024-11-03 180448](https://github.com/user-attachments/assets/78fd5aab-9bd0-4b1d-9c09-a0e4ae136062)
 **Figure 3**
 <br>
 
