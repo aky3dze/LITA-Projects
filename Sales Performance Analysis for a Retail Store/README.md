@@ -269,4 +269,4 @@ The recommendations drawn from the analysis are as follows:
 - The dataset lacks profit details, delivery choice and customer demographics, limiting deeper insights into profit trends and customer segmentation.
 
 😊💻
-🔗[insert power bi link here]
+🔗[Power BI link](https://app.powerbi.com/links/9WR4567E8V?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
