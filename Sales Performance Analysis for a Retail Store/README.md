@@ -203,7 +203,8 @@ group by Item
 | Shoes	|
                     
 ## Data visualization
-Power BI was used to create interactive visuals that bring the data insights to life. 
+The Power BI dashboard provides an interactive interface, allowing for filtering (Figures 1 - 3) based on the year and viewing trends by sales, thus region and subscription type.
+
 - 🔗[Power BI link](https://app.powerbi.com/links/9WR4567E8V?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
 
 ![Screenshot 2024-11-03 175846](https://github.com/user-attachments/assets/c05b5d7d-b43a-438c-8859-63ac6755d7ab)
