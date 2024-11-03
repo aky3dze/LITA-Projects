@@ -224,7 +224,7 @@ hats led in sales volume, indicating a high turnover of a lower-priced item that
 
 ### A yearly comparison: 2023 vs. 2024
 ---
-Analysing year-over-year trends gives deeper insights into understanding customer patterns:
+Analysing year-over-year trends gives deeper insights into understanding sales patterns:
 
 - 2023 (January to December)
   ---
@@ -235,7 +235,7 @@ Shirts emerged as the product with the highest volume followed by shoes.
 
 **3. Monthly sales trends:** Peak sales revenue occurred in February and July saw the highest sales volume.
 
-**3. Daily sales trends:** The findings reveal Tuesdays as the busiest sales day of the work week with a high sales revenue and volume. 
+**4. Daily sales trends:** The findings reveal Tuesdays as the busiest sales day of the work week with a high sales revenue and volume. 
 
 
 
@@ -247,7 +247,7 @@ Shirts emerged as the product with the highest volume followed by shoes.
 
 **3. Monthly sales trends:** February remained the peak month for sales revenue and volume, solidifying it as a critical period for the store.
 
-**3. Daily sales trends:** Thursdays emerged as the day with high sales revenue, with Sunday leading in volume.
+**4. Daily sales trends:** Thursdays emerged as the day with high sales revenue, with Sunday leading in volume.
  
 
 
@@ -255,6 +255,7 @@ Shirts emerged as the product with the highest volume followed by shoes.
 The following conclusion can be drawn from the analysis:
 - February had peak sales revenue across both years.
 - Tuesdays and Thursdays emerged as core sales revenue days, and Sundays as the highest sales volume day.
+- The number of orders was approximately equal across all regions.
 - An equal number of orders were placed for all products in 2023.
 - More orders were placed for hats and shoes in 2024 compared to the previous year.
   
