@@ -16,7 +16,7 @@
 - [Limitations](#limitations)
 
 ## Project Overview 
-This project involves an in-depth analysis of the sales performance of a retail store. The analysis explores sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The project culminates in an interactive Power BI dashboard that highlights these findings.
+This project provides an in-depth analysis of the sales performance of a retail store. The analysis explores sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The project culminates in an interactive Power BI dashboard that highlights these findings.
 
 
 ## Objectives
@@ -38,14 +38,14 @@ This data was obtained from the Ladies in Tech Africa (LITA) capstone project fi
 
 ## Tools and techniques
 The following tools and techniques were utilised for data processing, analysis and visualization: 
-- Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - For initial data cleaning and analysis
+1. Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - For initial data cleaning and analysis
      
-- SQL Server - For querying and extracting key insights
+2. SQL Server - For querying and extracting key insights
   	- The following SQL techniques were used:
   	 1. Aggregate functions
   	 2. Subqueries and conditional filtering
   	     
-- Power BI - For data visualization and dashboard creation
+3. Power BI - For data visualization and dashboard creation
 	- The following PowerBi features were incorporated:
    	 1. Measures
    	 2. DAX functions (e.g. `CALCULATE`, `SUM`, `DIVIDE`)
@@ -59,7 +59,7 @@ The following tools and techniques were utilised for data processing, analysis a
 - Loading cleaned data into SQL server and Power BI for further analysis; data types were reviewed accordingly.
 
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis (EDA)
 Exploratory Data Analysis (EDA) was conducted using SQL Server to uncover key sales insights, such as top products, regional sales distribution, and monthly and daily sales trends.
 
 ### SQL Queries Used in Analysis:
@@ -203,54 +203,69 @@ group by Item
 | Shoes	|
                     
 ## Data visualization
+Power BI was used to create interactive visuals that bring the data insights to life. 
+
 ![Screenshot 2024-10-30 002122](https://github.com/user-attachments/assets/d6cb9d39-6ed6-4a0c-83ff-b88796afc615)
 
 
 ## Findings
-The findings will be broken down into three parts; Overall, 2023, and 2024
+The findings will be broken down into two parts; Overall insights and a yearly comparison (2023 vs. 2024):
 
-- Overall
+### Overall insights
+---
+**1. Regional sales:** Over the two-year period, total sales revenue of approximately 2 million was made from 9,921 orders. The South region generated the highest sales revenue and volume, indicating a high customer demand for products in that region. Meanwhile, the West had the lowest, suggesting an opportunity for targeted marketing to create brand awareness and product appeal there.
+
+**2. Top-Selling Products:** Shoes generated the most revenue followed by shirts. Interestingly,  
+hats led in sales volume, indicating a high turnover of a lower-priced item that customers frequently purchase.
+
+**3. Monthly sales trends:** Peak sales and volume occurred in February probably due to seasonal demands.
+
+**4. Daily sales trends:** Sales were highest on Tuesdays, with volume peaks on Sundays.
+
+### A yearly comparison: 2023 vs. 2024
+---
+Analysing year-over-year trends gives deeper insights into understanding customer patterns:
+
+- 2023 (January to December)
   ---
- **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+**1. Regional Sales Distribution:**  In 2023, 5952 orders were placed, raking 1 million in sales revenue. Again, the South region dominated not only in sales revenue but also in volume, while the West had the lowest revenue and volume. 
 
-**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
-hat emerged as the top-selling product followed by shoes.
+**2. Top-Selling Products:** Shirts and hats generated the most revenue followed by hats.
+Shirts emerged as the product with the highest volume followed by shoes.
 
-**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+**3. Monthly sales trends:** Peak sales revenue occurred in February and July saw the highest sales volume.
 
-**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+**3. Daily sales trends:** The findings reveal Tuesdays as the busiest sales day of the work week with a high sales revenue and volume. 
 
-- 2023
+
+
+- 2024 (January to August)
   ---
- **1. Regional Sales Distribution:**  In 2023, 5952 orders were placed, raking in a total sales of 1 million. The South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales and sold fewer products. 
+ **1. Regional Sales Distribution:**  In 2024, 3969 orders were placed with 996,000 in sales revenue. The South region contributed the highest revenue and the most quantity sold, while the North had the lowest sales. 
 
-**2. Top-Selling Products:** Shirt generated the most revenue followed by hat.
-shirt emerged as the top-selling product followed by shoes.
+**2. Top-Selling Products:** Interestingly, customer preference seemed to have begun shifting with hats topping revenue generation followed by shoes, which had the most sales volume.
 
-**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold in July
+**3. Monthly sales trends:** February remained the peak month for sales revenue and volume, solidifying it as a critical period for the store.
 
-**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Tuesdays
-
-An equal number of orders were placed for all products in 2023
-
-- 2024
-  ---
- **1. Regional Sales Distribution:**  In all 3969 orders were placed raking in a total sales of 996,000. The South region contributed the highest revenue and the most quantity sold, while the North had the lowest sales. 
-
-**2. Top-Selling Products:** Hat generated the most revenue followed by shoes.
-shoes emerged as the top-selling product followed by hats.
-
-**3. Monthly sales trends:** Peak sales occurred in February, with the most products sold in the same month.
-
-**3. Daily sales trends:** Peak sales occurred on Thursday, with the most quantity of products on Sunday
-
-Overall, more orders were placed for hats and shoes in 2024 compared to the previous year.
+**3. Daily sales trends:** Thursdays emerged as the day with high sales revenue, with Sunday leading in volume.
+ 
 
 
 ## Conclusions and Recommendations
+The following conclusion can be drawn from the analysis:
+- February had peak sales revenue across both years.
+- Tuesdays and Thursdays emerged as core sales revenue days, and Sundays as the highest sales volume day.
+- An equal number of orders were placed for all products in 2023.
+- More orders were placed for hats and shoes in 2024 compared to the previous year.
+  
+The recommendations drawn from the analysis are as follows:
+- Inventory for top-selling products such as shoes and hats should be increased especially during peak months.
+- Marketing efforts should be increased in the West region to boost sales.
+- 
+
 
 ## Limitations
-- The dataset lacks profit details, delivery modes and customer demographics, limiting deeper insights into profit trends .
+- The dataset lacks profit details, delivery choice and customer demographics, limiting deeper insights into profit trends and customer segmentation.
 
 😊💻
 🔗[insert power bi link here]
