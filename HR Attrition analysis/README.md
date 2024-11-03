@@ -40,11 +40,11 @@ This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset
 
 
 ## Tools and concepts applied
-- PowerBi - for data visualization and dashboard creation
-	- The following PowerBi features were incorporated:
+- Power BI - for data visualization and dashboard creation
+	- The following concepts were incorporated:
    	 1. Measures
    	 2. Calculated columns
-   	 3. DAX
+   	 3. DAX functions (e.g. `SUM`, `AVERAGE`)
    	    
 
 ## Data Cleaning and Preparation
@@ -58,6 +58,7 @@ data cleaning and formating
 
 
 ## Findings
+People with 
 
 ## Conclusions and Recommendations
 
