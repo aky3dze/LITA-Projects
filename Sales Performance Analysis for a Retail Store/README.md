@@ -206,7 +206,17 @@ group by Item
 Power BI was used to create interactive visuals that bring the data insights to life. 
 - 🔗[Power BI link](https://app.powerbi.com/links/9WR4567E8V?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
 
-![Screenshot 2024-10-30 002122](https://github.com/user-attachments/assets/d6cb9d39-6ed6-4a0c-83ff-b88796afc615)
+![Screenshot 2024-11-03 175846](https://github.com/user-attachments/assets/c05b5d7d-b43a-438c-8859-63ac6755d7ab)
+**Figure 1**
+<br>
+
+![Screenshot 2024-11-03 175719](https://github.com/user-attachments/assets/dd43eaf9-d9e0-4048-a52a-472dc5a3640e)
+**Figure 2**
+<br>
+
+![Screenshot 2024-11-03 175747](https://github.com/user-attachments/assets/aac4e01c-e29b-4216-83af-3a40c09f041b)
+**Figure 3**
+<br>
 
 
 ## Findings
