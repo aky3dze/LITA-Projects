@@ -204,6 +204,7 @@ group by Item
                     
 ## Data visualization
 Power BI was used to create interactive visuals that bring the data insights to life. 
+🔗[Power BI link](https://app.powerbi.com/links/9WR4567E8V?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
 
 ![Screenshot 2024-10-30 002122](https://github.com/user-attachments/assets/d6cb9d39-6ed6-4a0c-83ff-b88796afc615)
 
@@ -269,4 +270,4 @@ The recommendations drawn from the analysis are as follows:
 - The dataset lacks profit details, delivery choice and customer demographics, limiting deeper insights into profit trends and customer segmentation.
 
 😊💻
-🔗[Power BI link](https://app.powerbi.com/links/9WR4567E8V?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
+
