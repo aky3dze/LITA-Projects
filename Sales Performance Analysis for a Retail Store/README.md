@@ -30,17 +30,17 @@ The main objectives of this analysis are to:
 This data was obtained from the Ladies in Tech Africa (LITA) capstone project file. It consists of a single table with the following attributes:
 - `OrderID` - A unique identifier for each order.
 - `Customer Id` - ID representing individual customers.
-- `Product` - The type of product sold (e.g., Shirt, Shoes).
+- `Product` - The type of product sold (e.g. Shirt, Shoes).
 - `Region` - The geographical area where the sale occurred (North, South, etc.).
 - `OrderDate` - The date when the order was placed.
 - `Quantity` - The number of units ordered.
 - `UnitPrice` - The price per unit of the product.
 
 ## Tools and techniques
-The following tools and concepts were employed for data processing, analysis and visualization: 
+The following tools and techniques were utilised for data processing, analysis and visualization: 
 - Microsoft Excel [Download Here](https://www.microsoft.com/es-es/) - For initial data cleaning and analysis
      
-- SQL server - For querying and extracting key insights
+- SQL Server - For querying and extracting key insights
   	- The following SQL techniques were used:
   	 1. Aggregate functions
   	 2. Subqueries and conditional filtering
@@ -48,19 +48,19 @@ The following tools and concepts were employed for data processing, analysis and
 - Power BI - For data visualization and dashboard creation
 	- The following PowerBi features were incorporated:
    	 1. Measures
-   	 2. DAX functions (CALCULATE, SUM, DIVIDE, etc)
+   	 2. DAX functions (e.g. `CALCULATE`, `SUM`, `DIVIDE`)
    	    
 - Github - To showcase this project as part of a portfolio 
 
 ## Data Cleaning and Preparation
 - Data loading and inspection: The raw data was initially loaded in Excel, and checked for missing values, duplicates and consistency in data format.
 - Data cleaning and formatting: This involved removing duplicates.
-- Calculation of subscription duration (in days) using the Excel formula `= Quantity*UnitPrice`
-- Loading data into SQL server and Power BI; data types were reviewed accordingly.
+- Calculation of Sales using the Excel formula `= Quantity*UnitPrice`
+- Loading cleaned data into SQL server and Power BI for further analysis; data types were reviewed accordingly.
 
 
 ## Exploratory Data Analysis
-Exploratory Data Analysis (EDA) was conducted using SQL to uncover key sales insights, such as identifying top products, analyzing sales by region, and identifying monthly trends.
+Exploratory Data Analysis (EDA) was conducted using SQL Server to uncover key sales insights, such as top products, regional sales distribution, and monthly and daily sales trends.
 
 ### SQL Queries Used in Analysis:
 ````sql
@@ -222,31 +222,35 @@ hat emerged as the top-selling product followed by shoes.
 
 - 2023
   ---
- **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+ **1. Regional Sales Distribution:**  In 2023, 5952 orders were placed, raking in a total sales of 1 million. The South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales and sold fewer products. 
 
-**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
-hat emerged as the top-selling product followed by shoes.
+**2. Top-Selling Products:** Shirt generated the most revenue followed by hat.
+shirt emerged as the top-selling product followed by shoes.
 
-**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold in July
 
-**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Tuesdays
+
+An equal number of orders were placed for all products in 2023
 
 - 2024
   ---
- **1. Regional Sales Distribution:**  In all 9921 orders were placed raking in a total sales of 2 million. the South region contributed the highest revenue and the most quantity sold, while the West had the lowest sales. 
+ **1. Regional Sales Distribution:**  In all 3969 orders were placed raking in a total sales of 996,000. The South region contributed the highest revenue and the most quantity sold, while the North had the lowest sales. 
 
-**2. Top-Selling Products:** Shoes generated the most revenue followed by shirt
-hat emerged as the top-selling product followed by shoes.
+**2. Top-Selling Products:** Hat generated the most revenue followed by shoes.
+shoes emerged as the top-selling product followed by hats.
 
-**3. Monthly sales trends:** Peak sales occurred in February, with the most quantity of product sold
+**3. Monthly sales trends:** Peak sales occurred in February, with the most products sold in the same month.
 
-**3. Daily sales trends:** Peak sales occurred on Tuesday, with the most quantity of products on Sunday
+**3. Daily sales trends:** Peak sales occurred on Thursday, with the most quantity of products on Sunday
+
+Overall, more orders were placed for hats and shoes in 2024 compared to the previous year.
 
 
 ## Conclusions and Recommendations
 
 ## Limitations
-- The dataset is limited to one table with a single subscription period, and no demographic data. Thus, 
+- The dataset lacks profit details, delivery modes and customer demographics, limiting deeper insights into profit trends .
 
 😊💻
 🔗[insert power bi link here]
