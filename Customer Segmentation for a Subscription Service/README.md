@@ -304,6 +304,7 @@ from sub
 
 ## Data visualization
 The PowerBi dashboard provides an interactive interface, allowing for filtering (Figure 1) based on whether or not a subscription was cancelled (Figures 2 and 3) and viewing trends by customer segments, thus region and subscription type.
+- 🔗[Power BI link](https://app.powerbi.com/links/K1KFoxULqH?ctid=3f227dba-f3f4-4544-b314-c6efd30e0d00&pbi_source=linkShare)
 
 ![Screenshot 2024-10-29 000243](https://github.com/user-attachments/assets/4277160a-1231-406f-bc06-f2baf8e25ac5)
 **Figure 1**
@@ -383,7 +384,7 @@ By implementing these recommendations, the company can maximize revenue, solidif
 - The dataset is limited to one table with a single subscription period, and no demographic data. Thus, customer behaviour across different seasons may not be fully captured in the analysis. Additionally, the effects of demographic patterns could enhance our understanding of churn and retention rates.
 
 😊💻
-🔗[insert power bi link here]
+
 
 
 
