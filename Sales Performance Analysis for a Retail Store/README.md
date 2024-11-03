@@ -226,8 +226,8 @@ hats led in sales volume, indicating a high turnover of a lower-priced item that
 ---
 Analysing year-over-year trends gives deeper insights into understanding sales patterns:
 
-- 2023 (January to December)
-  ---
+#### <ins>2023 (January to December)</ins>
+
 **1. Regional Sales Distribution:**  In 2023, 5952 orders were placed, raking 1 million in sales revenue. Again, the South region dominated not only in sales revenue but also in volume, while the West had the lowest revenue and volume. 
 
 **2. Top-Selling Products:** Shirts and hats generated the most revenue followed by hats.
@@ -239,8 +239,8 @@ Shirts emerged as the product with the highest volume followed by shoes.
 
 
 
-- 2024 (January to August)
-  ---
+#### <ins>2024 (January to August)</ins>
+  
  **1. Regional Sales Distribution:**  In 2024, 3969 orders were placed with 996,000 in sales revenue. The South region contributed the highest revenue and the most quantity sold, while the North had the lowest sales. 
 
 **2. Top-Selling Products:** Interestingly, customer preference seemed to have begun shifting with hats topping revenue generation followed by shoes, which had the most sales volume.
