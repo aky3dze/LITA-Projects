@@ -102,7 +102,7 @@ _**1470 employees, 237 exited, attrition rate: 16.12%**_
    - Distance is not a major factor in attrition since 144 employees who left lived near the workplace.
 
 10. **Business travel:** 
-   - Travel frequency does not appear to be a factor in attrition since the majority who left rarely travelled for work. Although business travel may come with some bonuses, it may not directly influence retention in the workplace.
+    - Travel frequency does not appear to be a factor in attrition since the majority who left rarely travelled for work. Although business travel may come with some bonuses, it may not directly influence retention in the workplace.
 
 
 
