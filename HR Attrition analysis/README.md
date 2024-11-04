@@ -22,7 +22,7 @@ This project analyses an HR attrition dataset to identify key factors contributi
 
 
 ## Data Source and Overview
-This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset includes attributes such as employee demographics, performance ratings, and attrition status. It is available in the file list above.
+This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset includes attributes such as employee demographics, performance ratings, and attrition status. 
 
 
 ## Tools and concepts applied
