@@ -97,5 +97,11 @@ _**1470 employees, 237 exited, attrition rate: 16.12%**_
    - Travel frequency does not appear to be a factor in attrition since the majority who left rarely travelled for work. Although business travel may come with some bonuses, it may not directly influence retention in the workplace.
 
 ## Conclusions and Recommendations
-
-## Limitations
+The following conclusions can be drawn from these findings:
+- Younger employees, particularly males and singles, show higher rates of attrition.
+- High turnover in R&D and specific roles like Lab Techs, Sales executives and Research scientists.
+- Monthly income, work environment, and working overtime greatly impact attrition.
+- Entry-level employees are more likely to leave.
+- Attrition is high within the first two years of employment.
+  
+Based on the findings, these are r
