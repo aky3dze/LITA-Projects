@@ -6,7 +6,7 @@
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Data Source and Overview](#data-source-and-overview)
-- [Tools](#tools)
+- [Tools and concepts applied](#tools-and-concepts-applied)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data visualization](#data-visualization)
@@ -23,24 +23,12 @@ This project analyses an HR attrition dataset to identify key factors contributi
 - Provide actionable insights to help the HR department create targeted strategies for improving employee retention.
 
 
-## Questions
-
-1. What is the overall attrition rate, and how does it vary by gender?
-2. Which age group experiences the highest attrition?
-3. How does attrition vary across different departments?
-4. Which job roles have the highest attrition rates?
-5. What is the correlation between years of service at the company and attrition?
-6. How does monthly salary affect attrition? Does a low salary lead to high attrition?
-7. Is there a relationship between overtime work and attrition?
-8. Is there a difference in attrition rates between high-performance and low-performance employees?
-9. How does the work-life balance affect attrition? Do employees tend to quit when work-life balance is low?
-
 ## Data Source and Overview
 This data was obtained from the Ladies in Tech Africa (LITA) course. The dataset includes attributes such as employee demographics, performance ratings, and attrition status. It is available in the file list above.
 
 
 ## Tools and concepts applied
-- Power BI - for data visualization and dashboard creation
+- Power BI - for data analysis, visualization and dashboard creation
 	- The following concepts were incorporated:
    	 1. Measures
    	 2. Calculated columns
@@ -104,4 +92,16 @@ The following conclusions can be drawn from these findings:
 - Entry-level employees are more likely to leave.
 - Attrition is high within the first two years of employment.
   
-Based on the findings, these are r
+Based on the findings, these recommendations can be made:
+- Increase salaries to reduce attrition.
+- Review workload and overtime practices.
+- Address concerns with the work environment.
+- Targeted retention strategies for specific roles and departments should be implemented.
+- Thorough orientation and training programs for new hires as well as entry-level employees.
+- Introduce career development programs for younger employees.
+
+By implementing these recommendations the company can reduce attrition, foster a healthy work environment and improve job satisfaction.
+
+😊
+💻
+👩‍💼
