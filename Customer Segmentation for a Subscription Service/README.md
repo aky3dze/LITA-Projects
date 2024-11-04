@@ -354,7 +354,7 @@ Active subscriptions outnumber cancelled subscriptions, reflecting a relatively 
 
 
 **8. Churn rate by subscription type**
-Premium and Standard subscription plans experienced higher churn rates, 59.96% and 59.90%, respectively, while Basic had a significantly lower churn rate (29.94). This may imply that the customers' expectations of higher-tier subscriptions were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received. Plans may be to review the current subscription plans and add better-aligned features or additional services.
+Premium and Standard subscription plans experienced higher churn rates, 59.96% and 59.90%, respectively, while Basic had a significantly lower churn rate (29.94%). This may imply that the customers' expectations of higher-tier subscriptions were unmet. Thus, there was a misalignment between their perceived expectations of these higher-tier subscriptions and what they received. Plans may be to review the current subscription plans and add better-aligned features or additional services.
 
 
 **9. Revenue per customer**
