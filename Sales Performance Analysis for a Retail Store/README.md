@@ -271,7 +271,7 @@ The following conclusion can be drawn from the analysis:
 - An equal number of orders were placed for all products in 2023.
 - More orders were placed for hats and shoes in 2024 compared to the previous year.
   
-The recommendations drawn from the analysis are as follows:
+The recommendations to improve sales are as follows:
 - Inventory for top-selling products such as shoes and hats should be increased especially during peak months.
 - Marketing efforts should be increased in the West region to boost sales.
   
