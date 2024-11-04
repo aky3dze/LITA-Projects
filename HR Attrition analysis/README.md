@@ -66,7 +66,7 @@ The Power BI dashboard provides an interactive interface, allowing for filtering
 
 
 ## Findings
-_**1470 employees, 237 exited, attrition rate: 16.12%**_
+_**Summary: 1470 total employees, 237 exited, attrition rate: 16.12%**_
 
 1. **Demographics:**
    - Sex and Age: Of the 237 employees who left, 150 were males, and 112 fell within the 25 - 34 age bracket. why???
